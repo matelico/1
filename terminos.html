@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<title>Mattel Mexico</title>  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="mat.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+ /* Container styling */
+.footer-newsletter__wrapper-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Title styling */
+.footer-newsletter__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inline form container */
+.footer-newsletter__form-inline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input styling */
+.footer-newsletter__form-inline-input {
+  flex-grow: 1;
+  position: relative;
+}
+
+.footer-newsletter__form-inline-input input {
+  width: 100%;
+  padding: 10px 50px 10px 15px; /* Padding to account for button */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded edges */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.footer-newsletter__form-inline-input input:focus {
+  border-color: #007bff;
+}
+
+/* Submit button inside the input */
+.footer-newsletter__form-inline-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #007bff;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-newsletter__form-inline-btn:hover {
+  background: #0056b3;
+}
+
+/* Error messages */
+.footer-newsletter__error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: none; /* Default hidden, shown dynamically */
+}
+
+/* Checkbox styling */
+.footer-newsletter__checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-newsletter__checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.footer-newsletter__checkbox label {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.footer-newsletter__checkbox a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-newsletter__checkbox a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .footer-newsletter__form-inline {
+    flex-direction: column;
+  }
+
+  .footer-newsletter__form-inline-btn {
+    position: relative;
+    transform: none;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .footer-newsletter__form-inline-input input {
+    padding: 10px 15px;
+  }
+}
+
+  a{color: black;
+
+  }
+ .container8{
+background: #4c4c4c;
+ }
+footer{
+    background:white;
+  color: black;
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.contenedor4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #53905b;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+/* Barra Superior */
+.topbar {
+  background-color: white;
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topbar__logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.topbar__logo {
+  height: 40px; /* Ajusta el tamaño de los logos */
+  width: auto;
+}
+
+/* Navbar */
+.navbar {
+  margin-top: 50px; /* Ajuste para no sobreponerse con la barra superior */
+}
+
+.navbar nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  font-size: 16px;
+}
+
+.navbar nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Añadir un pequeño hover para los logos */
+.topbar__logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Asegurarse de que el contenedor esté centrado */
+.container {
+
+  justify-content: center;
+
+  text-align: center; /* Centra el texto dentro del contenedor */
+  width: 100%;
+}
+
+/* Centrar los elementos dentro de las columnas */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Asegurarse de que las imágenes y los textos estén centrados dentro de cada columna */
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Asegura que las imágenes y textos se alineen verticalmente */
+  text-align: center; /* Centra el texto dentro de las columnas */
+}
+
+</style>
+
+</head>
+
+<body>
+ <header class=" navbar navbar-inverse">
+ <div class="topbar">
+    <div class="topbar__logo-container">
+
+  <a href="power-wheels.html" >
+        <img src="pown.png" class="topbar__logo">
+      </a>
+
+        <a href="hot-wheels.html" >
+        <img src="hotn.png" class="topbar__logo">
+      </a>
+        <a href="barbie.html" >
+        <img src="barn.png" class="topbar__logo">
+      </a>
+        <a href="fisher-price.html" >
+        <img src="fpn.png" class="topbar__logo">
+      </a>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse  navbar-fixed-top" style="background-color:#ea0028;">      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse"style="margin-top: 8px;">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="matn.png" style="padding: 5px 5px 3px 3px; " class="navbar-brand ">
+         
+        </div>
+       
+              
+        <div id="navbarMainCollapse" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                            <li><a href="nosotros.html" >Inicio</a></li>
+                           <li><a href="contacto.html" >Contactanos</a></li>
+            <li><a href='hot-wheels.html'>Hot Wheels</a></li>
+            <li><a href="fisher-price.html" >Fisher Price</a></li>
+            <li><a href="barbie.html" >Barbie</a></li>
+                        <li><a href="power-wheels.html">Power wheels</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+         <nav class=" navbar-inverse sub-navbar fixed-top"
+     >
+ 
+</nav>
+</header>
+<div class="contenedor"  >
+  <img src="ter.jpg"  class="img-responsive">
+  <div class="centrado">
+</div>
+</div>
+<section style="   flex: 1 1 50%; /* Ocupa la mitad del ancho */
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    text-align: justify;">
+  <h1>
+TERMINOS Y CONDICIONES DEL USO DEL SITIO WEB
+</h1>
+Actualizado en junio de 2008
+
+Este sitio web es proporcionado por Mattel, Inc. y sus afiliadas y subsidiarias (conjuntamente, "Mattel" y "nosotros"). El uso de este sitio web se encuentra sujeto a estos términos y condiciones del uso del sitio web (el "Acuerdo del usuario"). Leer cuidadosamente este Acuerdo del usuario y demás información o mencionada enlazada a este Acuerdo del usuario y se que se está de acuerdo de un acuerdo legalmente vinculante que contiene información de importancia acerca de nuestro sitio web y su permiso para usarlo. De vez en cuando se modificamos unilateralmente este Acuerdo del usuario de modo que resulta importante que repase este Acuerdo del usuario cada vez que use este sitio web.
+
+ATENCION: EL USO DE ESTE SITIO WEB SIGNIFICA QUE ACEPTA ESTAR SUJETO A TODOS LOS LOS T-RMINOS DE ESTE ACUERDO DEL USUARIO Y CUMPLIR CON LOS MISMOS. SI NO ESTÁ DE ACUERDO CON TODOS LOS T-RMINOS DE ESTE ACUERDO DEL USUARIO, ENTONCES NO PODRÁ USAR ESTE SITIO WEB.
+
+<h2> 
+1. Derecho a usar este sitio web
+</h2>
+Mattel le otorga una licencia limitada, sin exclusión, revocable para usar este sitio web para entretenimiento, información, educación y comunicación personales, siempre y cuando se tiene de acuerdo con todos los términos de este Acuerdo del usuario. Este sitio web contiene material y otros artículos relacionados a Mattel y a sus productos y servicios, y artículos similares de nuestros socios comerciales, licenciatarios y titulares de licencias, y otros terceros (conjuntamente, el "Contenido"). El Contenido puede estar en forma de información, texto, datos, imágenes, gráficos, iconos de octio, marcas registradas y no registradas, ilustraciones, fotos, clips de audio, música, sonidos, visualizaciones, videos, software u formas otros o formatos a la fecha o inventados en el futuro. Al usar este sitio web, debe respetar los derechos de propiedad intelectual de Mattel y otras entidades, tal como se indica a continuación. El uso no autorizado del Conociente puede violar leyes de derechos de autor, marcas comerciales, privacidad, publicidad, comunicaciones y otros, y todo uso no autorizado puede en responsabilidades personales, potenciales responsabilidades criminales.
+
+<h2> 
+2. Derechos de autor
+</h2>
+Todo el Contenido está protegido bajo derechos de autor y es, ya sea propiedad, de Mattel o se usa bajo permiso. Mattel renuncia a toda representación o garantía de que el uso no autorizado del Contenido no representará un incumplimiento con los derechos de los terceros que no son propiedad ni están son ni están afiliados con Mattel.
+
+Con excepción de lo estipulado en este Acuerdo del usuario o en el texto de este sitio web, se reproducirá, se reproducir, publicar, publicar, transmitir, modificar, adaptar, traducir, mostrar, vender, licenciar, reproducir en público, preparar obras despertrás en el Contenido o usar o explotar de otra forma de Contenido el Contenido. Tiene derecho a descargar una copia de partes del Contenido del Contenido en almacenamiento temporal en una computadora personal, para uso únicamente y visualización personal, no comercial, no política, no distribuida, siempre y cuando no se puede ver o modificar aviso aviso sobre ningún derecho de autor, marcas comerciales o demás avisos propietarios. El derecho limitado a no le otorga titularidad de ningún Contenido. Con excepción de lo indicado indicado, poco contenido en este Acuerdo del usuario puede ser considerado como a la Ud. (por acuerdo, u otra forma) de cualquier licencia o derecho a cualquier Contenido bajo cualquier derecho de autor o propiedad intelectual.
+
+Mattel respeta los derechos de propiedad intelectual de otros. Si cree que su obra fue violada por medio de aviso o distribución inadecuados a través de este sitio web, leer el párrafo abajo de la que se trata de unas violaciones de derechos de autor.
+
+<h2> 
+3. Marcas comerciales
+</h2>
+Las marcas comerciales, logotipos y marcas de servicio mostradas en este sitio web son propiedad de Mattel y de terceros, y los diseños de este sitio web son propiedad de Mattel (conjuntamente, las "Marcas", que también constituyen el Contenido). Todas las marcas que no son propiedad de Mattel son propiedad de sus respectivos titulares y se usan con previa autorización. Nada contenido en este sitio web puede ser considerado como alosión, por implicación, u otra forma, de cualquier derecho o licencia para usar cualquier marca.
+
+<h2> 
+4. Sus comunicaciones con Mattel; Derechos de Mattel para con sus presentaciones
+</h2>
+En Mattel queremos saber sus opiniones y comentarios No, en sus comunicados Mattel, tomo en cuenta que, salvo que Mattel lo solicite, Mattel no acepta ni considerar ideas o sugerencias relacionadas a productos, servicios, planos de mercadotecnia o otros asuntos.  Por lo tanto, no enviar a Mattel ningún material solicitado, tal como ideas para juguetes, juegos u otros productos, ni otra idea, idea, nota, nota, dibujo, invento, técnica, modelo, concepto, u otro material, contenido por el usuario o información similar.
+
+Todo comunicado de la forma de la índole de la índole y toda pregunta, comentario, respuesta, sugerencia o similar enviado por Ud. a Mattel a través de este sitio web o por fax, correo u otro medio, o bien transmitido, o bien transmitido, o cargado por Ud. a sitio web (conjuntamente, "Suss"), se trata de acuerdo como no confidencial y sin derecho de autor, y Mattel no asumir responsabilidad u obligación para con el mismo no tener que tener en la que haya un loco que se ha recibido bien. El recibo de Mattel de Sus comunicados no implica que Mattel admitirá su novedad, prioridad u originalidad, y no afectar el derecho de Mattel de disputar derechos de propiedad intelectual existentes o futuros relacionados con Sus comunicados.
+
+Ud. le otorga a Mattel un derecho y licencia no exclusivos, libres de regalías, perpetuos, irrevocables y sublicenciables para reproducir, distribuir, publicar, transmitir, modificar, adaptar, traducir, mostrar, vender, licenciar, reproducir en público, reproducirse en público, preparación de acciones en Sus comunicados y usar y sus explotar en todo el mundo en cualquier medio. Ud. representa y garantiza que: (a) tiene derecho y autorización de hacer el siguiente otorgamiento sin el consentimiento de ningún tercero y (b) Sus comunicados son precisos y, con derecho de uso por Mattel que está está en este establecido Acuerdo del usuario, no violar ni ningún otro en derecho de terceros.
+
+Al enviarnos correo electrónico, se comunica estándo electrónicamente con nosotros y está de acuerdo en recibir comunicaciones electrónicas de nosotros. Asimismo, está de acuerdo en que todos los acuerdos, avisos, revelaciones y otras comunicaciones que leamos proporciones electrónicas, se cumplen con cualquier requisito legal de que comunicaciones sean por escrito..
+
+<h2> 
+5. Compras en línea
+</h2>
+Este sitio web y otros sitios web de Mattel pueden ofrecer la capacidad de comprar productos (tales como juguetes) y servicios (tales como membresías) en línea. Debe ser de 18 años o alcalde para hacer cualquier compra. Visitar nuestras tiendas en línea mayor para detalles sobre entrega, devoluciones y otras políticas de la redada. En a a los productos y servicios incluidos en este sitio web, haciendo todo lo posible por mostrar los productos y servicios anunciados en este sitio web de la forma más precisa posible. No obstante, los colores, dimensiones y detalles que se ven en el monitor de la variar computadora dependiendo del equipo informático de modo que no podemos garantizar que su equipo se muestra con la precisión de los detalles de nuestros productos y servicios. En unos servicios anunciados en este sitio web, los términos de servicios pueden ser estipulados en un acuerdo aparte que se está volviendo yaco con el servicio adquirido y se verá complementado por este Acuerdo del usuario.
+
+A. Se ha jodido la realización de compras por menores
+Al ordenar un producto o servicio en línea de Mattel, representa que es de 18 años de edad o alcalde. Si un menor de 18 años de edad ordena un producto o servicio de Mattel sin el consentimiento de los padres, los padres pueden devolver el producto o servicio y ser reembolsados, según la política de devoluciones e intercambios en vigor en referencia a dique. Aumenta servicios disponibles para menores de 13 años en un programa en base a suscripción. En dichos casos, uno de los padres tiene que registrarse para el servicio y establecer el nivel de autorización correspondiente para el niño/a. El contenido y las actividades disponibles pueden ser según la exscripción y el sitio. Los padres recibirán información sobre el tipo de contenido y actividades a las que pueden lograr el acceso al niño/a después de suscribirse, y siempre está en control de la cuenta del niño/a. Perseguir una cuota de suscripción para algunos servicios.
+
+B. Impuestos
+Ud. se hace responsable de pagar todo impuesto de venta, uso y otros hechos similares con las compras en línea de productos o servicios de Mattel.
+
+C. Envíos y procesamiento; Seguro
+También se hace el responsable de pagar todo cargamento de envío procesamiento y se conociba con las compras en línea (incluyendo todo producto ofrecido con un servicio) y de asegurar sus compras.
+
+D. Devoluciones y garantías
+Sírvase leer la información disponible en nuestras tiendas en línea en a nuestra política de devoluciones e información sobre garantía..
+
+<h2> 
+6. Restricciones de uso
+</h2>
+Está de acuerdo en que no: (a) usará este sitio web para ningún propósito comercial o político (incluyendo, sin limitaciones, propósitos de publicidad, pedir dinero, dinero, coleccionar premios de productos o vender productos); (b) monitorizará, recolectar ni copiará Contenido en sitio en este sitio web usando robot robot, "bot", araña, insecto, spyware, motor, dispositivo, software, herramienta de extracción o otro dispositivo automático, o proceso manual de tipo; (en alguna) enmarcará niá uso de técnicas encubrir para otra otra otra otra otra otra otra otra otra otra otrainformación propietaria (incluyendo, sin limitaciones, cualquier imagen, texto o diseño de página); (d) usará una meta-etiqueta o otra "texto oculto" usando cualquier marca; (e) parte en tomar en actividad a través de cualquier actividad de cualquier cosa en conexión con este sitio web con el propósito de la edad de la edad o que el mar, ilegal, obscena, amenazante, amenazante, precavación o algún que viole derecho de un tercero; ni actividades participará en que interirenf con el acceso de un usuario a un sitio web o el correcto funcionamiento de la correcto deeste sitio web. También está de acuerdo en que, al usar este sitio web, no se hace pasar por otra persona o entidad.
+
+<h2>
+7. Áreas de la comunidad; Código de conducta
+</h2>
+Mattel puede optar por ofrecer servicios de la comunidad en este sitio web, cuentos como tableros de anuncios o mensajes, foros y salas de conversación. En cuentos, Mattel no se hago responsable de monitorizar, filtrar, censurar, editar o regular información o contenido proporcionado por Ud. o terceros en este sitio web, si bien Mattel reserva se se el derecho de la discreción propia. Mattel no aprueba ni aprueba la precisión o fiabilidad de dicha información o contenido proporcionado por usuarios o terceros ni responsabilidad asumir en conexión con estos.
+
+En a la información o contenido que descargue o a la drogo a este sitio web, Ud. representa y le garantiza a Mattel que tiene derecho y autorización de hacerlo con el consentimiento de terceros. Además, acepta no descargar o transferir a este sitio web: (a) contenido, difamatorio, obsceno, pornográfico, amenazante, violento, ilegal, rudo, acosador o inadecuado, (b) virus u otros elementos dañinos o (c) contenido con un propósito comercial (tal como ofertas para vender productos o servicios o intentos de pedir dinero anunciando o productos o servicios).
+
+Mattel se se reserva el derecho, a su discreción, de adoptar adicionales reglas en cualquier área de la comunidad y condiciones poner al acceso a a los cuentos servicios de la comunidad por cualquier individuo o individuo grupo de su edad según su edad, criterio geográfico u otro criterio, de negar otro accesorio o restringir acceso por cualquier individuo o grupo que no se cumpla con dicho criterio o cualquiera que cumpla con nuestro criterio o cualquier cosa en momento, y de cambiar el criterio o modificar las normas o criterio en cualquier momento. Mattel también se reserva el derecho (pero no hace hace responsable), a su discreción, de borrar cualquier anuncio en este sitio web que viole este Acuerdo del usuario y de negar acceso a este sitio web a cualquier usuario.
+
+<h2>
+8. Investigaciones; Cooperación con la policía; Cese
+</h2>
+Mattel se reserva el derecho, sin cualquier limitación, de: (a) investigar cualquier supuesta violación de la seguridad de su sitio web o tecnología de información u otros sistemas o redes, (b) investigar cualquier supuesta violación de este Acuerdo del usuario, (c) involucrarse y cualquier obligación con las autoridades policiales en la investigación de dichos asuntos, (día) violadores de este Acuerdo del usuario al rigor máximo de la ley y (e) descontinuar este sitio web o cesar su acceso a otro mismo momento, sin aviso previo, por cualquier otro y sin embargo para la obligación para Ud.
+
+
+9. Medidas de privacidad y seguridad
+
+Mattel tiene que la recopilación de información para el funcionamiento de este sitio web y para llevar a cabo sus pedidos o permitirle participar en ciertas actividades en línea. Mattel respeta la privacidad de sus visitantes, en especial de niños menores que visitan sitios web. Haga clic aquí para leer nuestra política de privacidad.
+
+Hemos implementado medidas de seguridad razonables para protegerse contra la pérdida, mal uso y alteración de información personal bajo nuestro control. Usamos la tecnología de capas de conexiones de seguridad para proteger los datos de las tarjetas de crédito durante la transmisión e implementamos cuidadosos internos internos para salvaguardar esta información en nuestro sistema. Vendedores, proveedores de servicios y otros que nos ayudan a hacer a hacer disponible este sitio web y nuestros productos y servicios que tienen que los acuerdos firmar de confidencialidad; no se les permite usar información personal, excepto conexión con sus servicios para Mattel, y que se ha hecho cumplir con las mejores prácticas por la industria para la creación de la información personal. No, no podemos garantizar la seguridad total de información personal.
+
+<h2>
+10. Declaraciones y limitaciones de responsabilidad
+</h2>
+Este sitio web puede incluir errores técnicos o de otro tipo y su uso y su navegación de este sitio web es bajo riesgo propio. ESTE SITIO WEB SE LE PROPORCIONA A UD. "TAL CUAL" Y "SEG-N EST-BABILLE", SIN GARANT-A DE NING-N TIPO, SEA EXPRESA O IMPL-CITA, INCLUYENDO, SIN LIMITACIONES, CUALQUIER GARANT-A IMPL-CITA DE COMERCIALIDAD, IDONEIDAD PARA UN FIN PARTICULAR Y CUMPLIMIENTO. MATTEL NO GARANTIZA QUE ESTE SITIO SIO WEB CUMPLILI CONRÁ SUS REQUISITOS O DARÁ RESULTADOS ESPEC-FICOS NI QUE SU USO DE ESTE SITIO SITIO WEB ININTERRUMPIDO O LIBRE DE ERRORES NI QUESTE SITIO WEB O EL SERVIDOR QUE LO HACE DISPONIBLE ESTBLIBRES DE VIRUS URES SOLO COMPENTES DA-INOS. SI EL USO DE ESTE SITIO WEB O DEL MATERIAL CONTENIDO EN ESTE SITIO WEB CAUSA QUE TENGA QUE DAR SERVICIO O SUSTITUIR CUALQUIER PROPIEDAD, MATERIAL, EQUIPO, U UTRO ELEMENTO, ENTONCES MATTEL NO SE HACERES RESPONSABLE DE DICHOS COSTOS. SIN LIMITAR LA GENERALIDAD DE LAS FRASES ANTEDICHAS, MATTEL NO SE HARÁRES RESPONSABLE DE NING-N DA-O DIRECTO, SECUNDARIO, CONSIGUIENTE, INDIRECTO O EJEMPLAR COMO CONSECUENCIA DE SU USO ESTE SITIO WEB. LAS DECLARACIONES Y LIMITACIONES CONTENIDAS EN ESTE PÁRRAFO SON UNA PARTE MATERIAL DE NUESTRO ACUERDO DE PROPORCIONARLE ESTE SITIO WEB. Observar que se perseguida algunas jurisdicciones no perteneció la exclusión de las garantías implícitas de modo que algunas de las anteriores exclusiones sentencian no selen válidas en su caso.
+
+Los residentes de California han derecho a la siguiente información específica de derechos al consumidor: puede contactarse con la unidad de ayuda con el departamento de servicios al cliente del Departamento de asuntos cliente (Adencia de Atención a la Descunada - División de Servicios al Consumidor - Departamento de Asuntos del Consumidor) por correo en 400 R St., Suite 1080, Sacramento, California, 95814 o por marca teléfono,ndo el 916.445.1254. Los residentes de California se revoca al Código Civil de California. 1542, que escupita: "Una distribución general no extiende las afirmaciones de que el acreedor no está al tanto o de la existencia de sospecha, a su favor, en el momento de la distribución, que de estado enterado debe haber afectado a material haber estado su acuerdo con el deudor".
+
+<h2> 
+11. Enlaces a este sitio web
+</h2>
+Se le otorga un derecho limitado, no exclusivo, revocable de crear hiperenlaces a este sitio web, siempre y cuando: (a) los enlaces solos sean a la página de la página de este sitio web, (b) los enlaces solos icono texto y no use ningún ni gráfico con marca, (c) los enlaces contenido y relación en su sitio no sugieran afiliación con Mattel o causa confusión entre clientes, (d) enlaces los contenido yd) enlaces los contenido y en su sitio no representanen a Mattel a productos o servicios en una forma, alguna falsa, algunaviste de la ofensiva otra forma de la ofensiva otra forma y(e) los enlaces y contenido relacionado en su sitio no tiene ningún propósito comercial.
+
+<h2> 
+12. Enlaces en este sitio web a otros sitios y de otros sitios
+</h2>
+Este sitio web puede contener enlaces a/de sitios de terceros ("Sitios enlazados"), incluyendo sin limitaciones, sitios manejados por anunciantes, licenciatarios, titulares de licencias y socios promocionales y comerciales de Mattel. Mattel no tiene el control del contenido de Sitios enlazados y Mattel no asumir obligación de revisar para ningún otro Sitio enlazado. Mattel no promociona, aprueba o patrocina ningún sitio enlazado, o cualquier contenido, publicidad, información, materiales, productos, servicios u otros elementos disponibles de estos, y Mattel rechaza toda responsabilidad en conexión con estos. Requerimos que los proveedores de servicios y vendedores que fiables gestionan sitios web en nuestro nombre protegió la privacidad de toda información personal, se sostenen las mejores prácticas aceptadas por la industria para salvaguardar información personal, según los derechos de propiedad intelectual, como de terceros, y manejen sus operaciones en cumplimiento en todas las normas en vigor. Toda actividad en la que participe en conexión con un Sitio enlazado está sujeta a la política de privacidad, condiciones de uso y otros términos descartó por la titular del Sitio enlazado, y Mattel rechace toda responsabilidad en conexión con estas.
+
+<h2>
+13. Titulares, publicidad y promoción
+</h2>
+Nos reservamos el derecho de anunciar titulares, publicidad, promociones y contenido similar en este sitio web. Anunciantes y firmas de terceros que publican publicidad se recurrid se rijan bajo diferentes términos y condiciones y políticas de privacidad de la de Mattel de modo que recomendamos las lea cuidadosamente. Toda interacción, correspondencia y transacción comercial que entable con cualquier anunciante y otro tercero en este sitio web (incluyendo a través de Sitios enlazados) es exclusivamente entre Ud. y el tercero (incusión, sin limitaciones, asuntos relacionados con el contenido de publicidad, pagos, entregas de garantías, seguridad de privacidad y datos y otros de terceros). Mattel renuncia toda responsabilidad en conexión a lo antepuesto.
+
+<h2>
+14. Procedimiento para alegar violaciones de derechos de autor
+</h2>
+Mattel responde a la manera en que se le avisó a avisos de supuestas violaciones de derechos de autor que se consiste con el acta de derechos de autor 'EE.UU. Digital Millennium Copyright Act ("DMCA")', como está estipulado a-. Si es usted titular de derechos de autor de una obra y se cree que sus derechos de propiedad intelectual en obra dicha fueron violados a través de un anuncio o distribución inadecuados de este sitio web, envíen un aviso por escrito que lo siguiente incluya:
+
+    una leyenda o línea de asunto que diga: "DMCA Copyright Infringement Notice";
+    una descripción de la obra con derechos de autor que se cree que fue violada;
+    la dirección URL del sitio y una descripción del lugar, en dicho sitio, donde se encuentra el material que se cree que está en violación con su obra;
+    su domicilio, número de teléfono y dirección de correo electrónico;
+    una declaración que se cree honestamente que el material en violación no tiene autorización del titular de los derechos de autor, su agente o la ley;
+    una declaración, bajo pena de perjurio, que toda la información en su aviso es precisa y que es Ud. el titular de los derechos de autor (o, si no es Ud. el propietario de los derechos de autor, lo que se debe indicar que está autorizado para actuar en nombre del titular de un derecho exclusivo que se está volviendo loco); y
+    su firma electrónica o física.
+
+Mattel solo recibirá avisos DMCA por correo electrónico o fax en las direcciones de abajo:
+
+Por Correo: Mattel, Inc.
+333 Boulevard Continental
+El Segundo, California 90245-5012
+
+Atención: Vicepresidente de Asuntos Jurídicos y Empresariales
+
+Por Correo Electrónico: Copyright InfringementNotice.Mattel.com
+
+Por Fax: 310 252-2567.
+
+Mattel puede optar por no contestar a avisos DMCA que no se adole con todos los requisitos anteriores, y Mattel puede optar por el supuesto material ilegal de que se ingresa a través de avisos que no cumplen con el acta DMCA. Si tiene otra pregunta llámenos al 310.252.2000.
+
+<h2>
+15. Disposición generales
+</h2>
+A. Indemnización
+Aceptar, defensor y rezador a Mattel (incluyendo las afiliadas y subsidiarias de Mattel) y sus ejecutivos, empleados, socios comerciales, licenciatarios y titulares de licencias contra cualquier daño, responsabilidad, costo y gasto (incluyendo gastos legales legales) en referencia a cualquier demanda, acción, acción, o exigencia entablado en contra de tal entidad, o referencia en referencia a la investigación, o defensa de resolución de esta, en conexión con su uso de este sitio web.
+
+B. A Modificaciones a este sitio web y este Acuerdo del usuario
+Mattel puede, a su discreción, hacer cambios a cualquier aspecto de este sitio web, incluyendo, sin limitaciones, cualquier Contenido, cualquier actividad disponible en este sitio web y cualquier producto o servicio ofrecido en este sitio web. Además, Mattel puede, su discreción, modificar este Acuerdo del usuario actualizando ondo este documento, con los términos modificados entrando en vigor a partir de la fecha en que se anuncien. El uso de este sitio web a partir de la fecha de dichos cambios se su aceptación para con los cambios.
+
+C. Mantenimiento del sitio web; Disponibilidad de productos y servicios
+Mattel controla y mantiene este sitio web desde su casa matriz en El Segundo, California, en los Estados Unidos de América, y Mattel no hace representación de que este sitio web es apropiado o está disponible fuera de los Estados Unidos de América. Si utiliza este sitio web desde otras ubicaciones, Ud. es responsable de cumplir con las leyes locales en vigor. Si bien los productos y servicios de Mattel están disponibles en muchas partes del mundo, este sitio web puede incluir descripciones de productos y servicios que solo están disponibles en los Estados Unidos de América (o solo en algunas partes de este país) y no están disponibles a nivel mundial.
+
+D. Jurisdicción, competencia y resolución alterna de disputa
+Cualquier controversia o reclamo en referencia a este sitio web, el Contenido o este Acuerdo del usuario, no resueltos alguna de manera entre Ud. y Mattel, vanidosos decididos por arbitraje por arbitraje vinculante en cumplimiento con las normas de arbitraje comercial de la Asociación Arbitraje de la Asociación Arbitraje de Norteaamericana ("AAA"), en cumplimiento de los procedimientos suplementarios para disputas de clientes de la AAA. Toda controversia o reclamo de este tipo árbitros de manera individual, y no van consolidados en ningún arbitraje con cualquier relamo o controversia de cualquier tercero. El arbitraje se llevará a cabo en Los Ángeles, California, y la decisión final del arbitraje puede presentarse en cualquier tribunal con jurisdicción. Todo reclamo o causa de acción en referencia a este sitio web, el Contenido o este Acuerdo del usuario, debe dentro de un año después de presentarse el relamo o causa de acción, que van de lo contrario bloqueados por siempre. Toda acción o medida de parte de Mattel conexo a su acceso a este sitio web o cualquier Contenido, como al uso de estos, en base a este párrafo ser entabladas en el tribunal estatal o federal en el condado de Los Ángeles, California. También, acepta la jurisdicción personal de los tribunales en el condado de Los Ángeles, California en lo que todo es asunto en relación con su acceso o uso de este sitio web y el Contenido, y rechaza sus derechos a traslado o consentimiento de traslado. Este Acuerdo del usuario será regido e interpretado según las leyes del estado de California, sin consideración de sus conflictos o provisiones legales. Las anteriores provisiones de este párrafo no habrían válidas en el caso de cualquier acción legal a cabo por Mattel para recuperar daños por pérdida, gasto o daño, o para solicitar un mandamiento judicial en conexión con este (o cualquier pérdida, gasto o daño potenciales), en relación con este sitio web, Contenido cualquier, operaciones de Mattel y/o productos o servicios de Mattel como consecuencia de su acción o acción de acción.
+
+E. Exclusión
+Si se ha desabastecedo de este Acuerdo del usuario es no considerado legal, ni un nulo, o un nulo de posible cumplimiento por cualquier, dicha dilacional, se ha considerado excluida del resto de este Acuerdo.
+<h2>
+16. Precios y Distribuidores
+</h2>
+    Precios
+
+    Este sitio en persona tiene la finalidad de información brindar al respecto público de los principales productos Mattel. El precio que se muestra la constituyera la constituyera por Mattel como fabricante de los productos para los distribuidores que comercializan al público en general, sin embargo, el precio final del producto puede variar de dependiendor que el consumidor elija. El precio final del producto debe ser consultado en el establecimiento comercial o el sitio de la venta del distribuidor de su elección, por lo que Mattel se deslinda de discrepancia de cualquier discrepancia entre el precio mostrado en el presente sitio y el ofrecido por el final del distribuidor, como de cualquier incumplimiento en el precio ofrecido por última vez.
+    -Dónde Comprar?
+
+    La listado de distribuidores que se muestran no se ha ido averió la totalidad de los distribuidores de los productos Mattel, por lo que la información que se puede hacer para la imposición de multas. Consulta la disponibilidad de productos con el distribuidor de tu elección.
+
+ </section>
+
+<div class="footer-newsletter__wrapper-form">
+  <div class="footer-newsletter__title">¡Envio  a domicilio gratis en la compra minima de $1,600.00!</div>
+  <form class="footer-newsletter__form" id="footerNewsletterForm" data-source-id="10929" data-preference-id="Mattel Shop LATAM">
+   
+    <div class="footer-newsletter__checkbox">
+      <label for="footerNewsletterCheckbox">
+        Valido en toda la republica mexicana y hasta el 9 de Enero del 2025 <br> <a href="https://shop.mattel.com/pages/terms-conditions-latam">Términos y condiciones</a> - <a href="https://shopping.mattel.com/es-es/pages/privacy-statement">Declaración de privacidad de Mattel.</a>
+      </label>
+    </div>
+  </form>
+</div>
+
+      
+<footer >
+  <div >
+    <div class="container" style="max-width: 100%;   ">
+
+      <div class="col-sm-2">
+        <img  src="banner.png" style="max-width: 250px;" >
+      </div>
+          <div class="col-sm-3" style="text-align: center;" >
+             <b>
+          <br><a href="aviso.html" style="color:black;">Aviso de privacidad</a>
+          <br><a href="terminos.html" style="color:black;">Términos y Condiciones </a>
+          <br><a href="contacto.html" style="color:black;">Contactanos</a> </b>
+          </div>
+          <b>
+      <div class="col-sm-3" style="text-align:center;margin-top: 5px;color: black;" >
+            <br>            
+
+                      <a href="#"style="color:black;"><br>
+<p>Carretera a Laredo Km 14.5
+Parque Industrial Monterrey CP:66400
+Monterrey, Nuevo León, México
+</p>
+          </b>
+    </div>
+        
+      </div>         
+<br><nav style="background-color: white;color:black;text-align: center;"><b>Todos los derechos reservados<br>Mattel - 2024 <br></nav></b>
+  </div>
+  </div>
+</footer>   
+ <script src="cms/assets/paginator.js"></script>
+    <script src="cms/assets/paginate.js"></script>
+    <script src="cms/assets/paginate-content.js"></script>
+   <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/b46844f7c3.js" crossorigin="anonymous"></script>
+  <script src="cms/assets/responsiveslides.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
