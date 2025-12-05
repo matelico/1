@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<title>Barbie Mexico</title>  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="bar.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+      .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 75%;
+z-index: 20;
+}
+.redes-flotantes img {
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+.redes-flotantes img:hover {
+-moz-transform: scale(1.1) rotate(6deg);
+-webkit-transform: scale(1.1) rotate(6deg);
+-o-transform: scale(1.1) rotate(6deg);
+-ms-transform: scale(1.1) rotate(6deg);
+transform: scale(1.1) rotate(6deg);
+}
+  body{
+    max-width: 96%;
+  }
+ /* Container styling */
+.footer-newsletter__wrapper-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+/* Title styling */
+.footer-newsletter__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+/* Inline form container */
+.footer-newsletter__form-inline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Input styling */
+.footer-newsletter__form-inline-input {
+  flex-grow: 1;
+  position: relative;
+}
+.footer-newsletter__form-inline-input input {
+  width: 100%;
+  padding: 10px 50px 10px 15px; /* Padding to account for button */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded edges */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.footer-newsletter__form-inline-input input:focus {
+  border-color: #007bff;
+}
+/* Submit button inside the input */
+.footer-newsletter__form-inline-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #007bff;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.footer-newsletter__form-inline-btn:hover {
+  background: #0056b3;
+}
+/* Error messages */
+.footer-newsletter__error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: none; /* Default hidden, shown dynamically */
+}
+/* Checkbox styling */
+.footer-newsletter__checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.footer-newsletter__checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.footer-newsletter__checkbox label {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+.footer-newsletter__checkbox a {
+  color: #007bff;
+  text-decoration: none;
+}
+.footer-newsletter__checkbox a:hover {
+  text-decoration: underline;
+}
+/* Responsive design */
+@media (max-width: 480px) {
+  .footer-newsletter__form-inline {
+    flex-direction: column;
+  }
+  .footer-newsletter__form-inline-btn {
+    position: relative;
+    transform: none;
+    right: 0;
+    margin-top: 10px;
+  }
+  .footer-newsletter__form-inline-input input {
+    padding: 10px 15px;
+  }
+}
+  a{color: black;
+
+  }
+ .container8{
+background: #4c4c4c;
+ }
+footer{
+    background:white;
+  color: black;
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.container{
+  max-width: 100%;
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.container4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+   color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.container5{
+    position: relative;
+    display: inline-block;
+    align-items: center;
+   color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* Barra Superior */
+.topbar {
+  background-color: white;
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topbar__logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.topbar__logo {
+  height: 40px; /* Ajusta el tamaño de los logos */
+  width: auto;
+}
+
+/* Navbar */
+.navbar {
+  margin-top: 50px; /* Ajuste para no sobreponerse con la barra superior */
+}
+
+.navbar nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  font-size: 16px;
+}
+
+.navbar nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Añadir un pequeño hover para los logos */
+.topbar__logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}.category-tab ul {
+  background: #0c231e;
+  border-bottom: 1px solid #bc955c;
+  list-style: none outside none;
+  margin: 0 0 30px;
+  padding: 0;
+  width: 100%;
+      }
+
+</style>
+               </head>
+<body>
+
+
+
+ <header class=" navbar navbar-inverse">
+ <div class="topbar">
+    <div class="topbar__logo-container">
+  <a href="power-wheels.html" >
+        <img src="pown.png" class="topbar__logo">
+      </a>
+        <a href="hot-wheels.html" >
+        <img src="hotn.png" class="topbar__logo">
+      </a>
+        <a href="barbie.html" >
+        <img src="bar.png" class="topbar__logo">
+      </a>
+        <a href="fisher-price.html" >
+        <img src="fpn.png" class="topbar__logo">
+      </a>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse  navbar-fixed-top" style="background-color:#ff3eb5;">      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse"style="margin-top: 8px;">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="barb.png"  class="navbar-brand ">
+                </div> <div id="navbarMainCollapse" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                            <li><a href="nosotros.html" >Inicio</a></li>
+                           <li><a href="contacto.html" >Contactanos</a></li>
+            <li><a href='hot-wheels.html'>Hot Wheels</a></li>
+            <li><a href="fisher-price.html" >Fisher Price</a></li>
+            <li><a href="barbie.html" >Barbie</a></li>
+                        <li><a href="power-wheels.html">Power wheels</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+</header>
+
+
+
+
+  <br>
+  <br>
+
+
+<main class="inner-page interior ficha">
+
+
+  <div class="container">
+   <div class="col-sm-12" style="text-align:center;">    
+    
+ 
+    <div class="">
+     <section>
+      <div class="col-md-7 col-xs-12 col-sm-12 pull-left" tabindex="0">  
+        <div class="col-sm-12  padding-left">
+          <div class="product-details"><!--product-details-->
+           
+
+            <div class="col-sm-6">
+             <div class="view-product"class="img img-responsive">
+                <img src="img/cm.jpg" class="img img-responsive">
+              </div>
+              <div id="similar-product" class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                      <a href="img/cm1.jpg"><img src="img/cm1.jpg"></a>
+                      </div>
+                     <div class="item ">
+                      <a href="img/cm2.jpg"><img src="img/cm2.jpg"></a>
+                    </div>              
+                     <div class="item ">
+                      <a href="img/cm3.jpg"><img src="img/cm3.jpg"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="img/cm4.jpg"><img src="img/cm4.jpg"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="img/cm5.jpg"><img src="img/cm5.jpg"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="img/cm6.jpg"><img src="img/cm6.jpg"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="img/cm7.jpg"><img src="img/cm7.jpg"></a>        
+                    </div>
+ <div class="item ">
+                      <a href="img/cm8.jpg"><img src="img/cm8.jpg"></a>        
+                    </div>
+                   
+                   </div>
+                  <!-- Controls -->
+                  <a class="left item-control" href="#similar-product" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="right item-control" href="#similar-product" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+              </div>
+            </div>
+
+
+
+           <div class="col-sm-6">
+  <div class="product-information"><!--/product-information-->
+    <h3>Barbie Dreamhouse Doll House con 70 Accesorios y Ascensor accesible</h3>
+    <h6>ID:187227</h6>
+
+    <span><h4>MXN $2,230.00</h4></span>
+
+    <!-- BOTÓN CORRECTO PARA AGREGAR AL CARRITO -->
+    <button onclick="agregarProducto(
+      'Barbie Dreamhouse Doll House con 70 Accesorios y Ascensor accesible',
+      2230,
+      'img/cm.jpg'
+    )" 
+    style="background-color:#000; color:#fff; padding:10px 15px; border:none; cursor:pointer;">
+      Comprar
+    </button>
+
+    <p>
+      <b><br>Edad:</b>3 años en adelante
+    </p>
+  </div><!--/product-information-->
+</div>
+
+             
+              </section>
+              </div>
+
+
+      
+
+      <div class="col-md-4 col-xs-12 pull-right"style="text-align:left;">
+
+
+
+ <div class="">
+         
+            <div class="panel-group category-products" id="accordian" style="margin-bottom: 10px;"><!--category-productsr-->
+             <br><br>
+
+                 <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#tal">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+               Detalles del producto
+                    </a>
+                  </h4>
+                </div>
+                <div id="tal" class="panel-collapse collapse">
+                 
+
+<p>
+
+Cuando la imaginación joven se mueven en el Barbie DreamhouseTM, convierten esta increíble casa de muñecas en un hogar de ensueño. Más de 3 pies de alto y 4 pies de ancho, el Barbie DreamhouseTM tiene tantas características increíbles - tres pisos, ocho habitaciones que incluyen un coche (coche no incluido) y una oficina en casa, un ascensor de trabajo que se adapta a cuatro muñecas o una muñeca Barbie en una silla de ruedas, una piscina que tiene una diaposi reducida que desciende de la historia de arriba, cinco piezas de muebles de transformación, luces, sonidos y más de 60 accesorios adicionales, incluyendo un cachorro adorable, que se puede utilizar para decorar, establecer la escena y jugar fueratantas historias. El diseño de enchufe y juego ayuda a mantener las piezas en su lugar a medida que las manos pequeñas se mueven (y hacer limpieza fácil para las manos adultas). Las decoraciones y muebles para los ajustes interiores y exteriores inspiran el juego desde todos los ángulos, y las transformaciones proporcionan diversión de dos en uno mientras fomentan la acción flexible - el sofá se convierte en literas, la mesa de café se vuelca para una cama tamaño para una muñeca ChelseaTM (se vende por separado), la chimenea se convierte en una oficina casera, el refrigerador se convierte en un stand de comida al aire libre y el horno alberga una barbacoa en la espalda. Las luces y los sonidos añaden toques aún más deliciosos: el horno se ilumina y las garrapatizas, el fogón empotrero con la sartén y silba con la tetera y el inodoro hace un sonido de enjuague. Los jóvenes decoradores se divertirán tantos accesorios en movimiento alrededor de la casa mientras exploran su estilo personal y cuentan todo tipo de historias, de día a noche, de interior a exterior, casa de Barbie sola o con una casa llena de amigos y familiares (muñecas vendidas por separado). Fiestas en piscina, amantes de pármeos, enlace con hermanas, barbacoas de patio trasero, cumpleaños, vacaciones y todos los días - hay historias indebidas que contar y maneras ilimitadas de explorar vivir en el Barbie DreamhouseTM porque con Barbie, todo es posible. Incluye Barbie Dreamhouse y 70 accesorios que incluyen muebles, artículos para el hogar y un cachorro; muñecas, modas y coche no incluidos. Los colores y decoraciones pueden variar.</p>
+                 <hr>
+                </div>
+              </div>
+
+
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#mane">
+                       <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                Caracteristicas
+                    </a>
+                  </h4>
+                </div>
+                <div id="mane" class="panel-collapse collapse">
+<ul><li>Con una impresionante cifra de 3 pies de alto y 4 pies de ancho y con 3 pisos, 8 habitaciones, juego de todo el ángulo, un ascensor de trabajo y piscina con tobogán, el Barbie DreamhouseTM anima a la imaginación joven a mudarse a esta casa de muñecas y establecer una casa de ensueño.</li>
+                
+                  <li>Las características de soñar incluyen el ascensor de trabajo con espacio para 4 muñecas o una muñeca Barbie en silla de ruedas, una nueva oficina en casa, una cochera y una piscina de segundo piso con un tobogán que comienza en la tercera historia - llenarlo de agua para una verdadera salpicadura.</li>
+                
+                  <li>Luces y sonidos añaden toques realistas y animan a jugar al rol: coloca la sartén en la estufa y presiona para un sonido chispeante; haz lo mismo con el tesorizado del té para silbar; abrir la puerta del horno para verla encendida; gira el temporizador del horno para marcar; y pulsa un botón en el inodoro para un sonido de rubor.</li>
+                
+                  <li>La diversión de dos en uno amplía las posibilidades de juego: el sofá se abre para crear literas y la mesa de café gira en torno a la cabeza revelando una cama para la muñeca ChelseaTM (se vende por separado) para crear un dormitorio de invitados; la chimenea se da la vuelta para transformar una guarida en una oficina casera; el fregadero de la cocina hace el doble deber con un lado con una barbacoa y estantes y el otro con el horno y una papelera de reciclaje; y la parte trasera del refrigerador es un stand de comida al aire libre.</li>
+                
+                  <li>Los accesorios adicionales -- la casa de muñecas Barbie viene con 70 piezas en total -- fomentan la expresión personal e inspiran un sin fin de contar historias. Los mangos de algunos de los elementos permiten el juego de rol, mientras que el diseño de plug-and-play permite el juego activo.</li>
+                
+                  <li>Añade variedad a la narración y el tiempo de juego ampliando el mundo de la muñeca de Barbie y el tuyo porque puedes ser cualquier cosa con Barbie (cada uno se vende por separado, sujeto a disponibilidad).</li></ul>                  <hr>
+                 <br><br>. 
+                </div>
+              </div>
+
+            
+                     
+           
+            </div><!--/category-products-->
+         </div></div> </div>
+          </div><!--/product-details-->
+
+
+
+<div class="container4">
+<div class="pv-choking-hazard">
+  <i class="pv-choking-hazard__icon icon icon--warning"></i>
+  <div class="pv-choking-hazard__content-wrapper">
+    <span class="pv-choking-hazard__content">
+      ADVERTENCIA: Contiene o puede generar partes pequeñas que pueden causar asfixia 
+    </span>
+  </div>
+</div>
+</div>
+   
+<section id="5189" class="list-article documents">
+  <div class="container5">
+    <hr class="red">
+    <div class="row">
+
+      <!-- Producto 1 -->
+      <div class="col-md-4 col-xs-12 col-ms-12">
+        <article class="post">
+          <div class="guard-of">
+            <a href="jg.html"><img class="img img-responsive" src="img/jg.jpg" /></a>
+            <h4><b>Barbie Signature Muñeca de Colección Music Series Juan Gabriel<br>$999.00</b></h4>
+
+            <button onclick="agregarProducto(
+              'Barbie Signature Muñeca de Colección Music Series Juan Gabriel',
+              999,
+              'img/jg.jpg'
+            )">
+              Comprar
+            </button>
+
+            <br><br><br>
+          </div>
+        </article>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-4 col-xs-12 col-ms-12">
+        <article class="post">
+          <div class="guard-of">
+            <a href="dh.html"><img class="img img-responsive" src="img/dh.jpg" /></a>
+            <h4><b>Barbie Dreamhouse, 75o Pieces, Pool Party Doll House<br>$2,850.00</b></h4>
+
+            <button onclick="agregarProducto(
+              'Barbie Dreamhouse, 75o Pieces, Pool Party Doll House',
+              2850,
+              'img/dh.jpg'
+            )">
+              Comprar
+            </button>
+
+            <br><br><br>
+          </div>
+        </article>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-4 col-xs-12 col-ms-12">
+        <article class="post">
+          <div class="guard-of">
+            <a href="bs.html"><img class="img img-responsive" src="img/bs.png" /></a>
+            <h4><b>Barbie Signature Muñeca de Colección 65° Aniversario<br>$1,970.00</b></h4>
+
+            <button onclick="agregarProducto(
+              'Barbie Signature Muñeca de Colección 65° Aniversario',
+              1970,
+              'img/bs.png'
+            )">
+              Comprar
+            </button>
+
+            <br><br><br>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+ 
+<div class="footer-newsletter__wrapper-form">
+  <div class="footer-newsletter__title">¡Envio  a domicilio gratis en la compra minima de $1,600.00!</div>
+  <form class="footer-newsletter__form" id="footerNewsletterForm" data-source-id="10929" data-preference-id="Mattel Shop LATAM">
+    <div class="footer-newsletter__checkbox">
+      <label for="footerNewsletterCheckbox">
+        Valido en toda la republica mexicana y hasta el 9 de Enero del 2026 <br> <a href="terminos.html ">Términos y condiciones</a> - <a href="aviso.html">Declaración de privacidad de Mattel.</a>
+      </label>
+    </div>
+  </form>
+</div>
+
+    <!-- =============== CARRITO =============== -->
+
+<!-- ICONO SUPERIOR -->
+<div id="carrito-icono" style="
+  cursor:pointer;
+  position:fixed;
+  top:100px;
+  right:20px;
+  font-size:32px;
+  z-index:9999;
+">
+  🛒 <span id="carrito-count">0</span>
+</div>
+
+<!-- PANEL DESPLEGABLE -->
+<div id="carrito-panel" style="
+  display:none;
+  position:fixed;
+  top:130px;
+  right:40px;
+  width:300px;
+  background:white;
+  padding:0;
+  border:1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index:10001;
+  border-radius:8px;
+">
+
+  <!-- LISTA CON SCROLL -->
+  <div style="
+    max-height:260px;
+    overflow-y:auto;
+    padding:15px;
+  ">
+
+    <!-- BOTÓN OCULTAR -->
+    <button onclick="document.getElementById('carrito-panel').style.display='none'" style="
+      width:100%;
+      padding:6px;
+      margin-bottom:10px;
+      cursor:pointer;
+      background:#ff4444;
+      color:white;
+      border:none;
+      border-radius:6px;
+      font-size:14px;
+    ">Ocultar carrito</button>
+
+    <h3 style="margin-top:0;"></h3>
+
+    <div id="carrito-lista"></div>
+
+  </div>
+
+  <!-- TOTAL + BOTONES FIJOS -->
+  <div style="
+    padding:12px;
+    border-top:1px solid #ddd;
+    background:#f7f7f7;
+    position:sticky;
+    bottom:0;
+  ">
+
+    <p style="margin:0; font-size:16px;">
+      <b>Total: $<span id="carrito-total">0</span></b>
+    </p>
+
+    <button onclick="borrarCarrito()" style="
+      width:100%;
+      padding:8px;
+      cursor:pointer;
+      margin-top:8px;
+    ">
+      Borrar carrito
+    </button>
+
+    <button onclick="window.location.href='checkout.html'" style="
+      width:100%;
+      margin-top:10px;
+      padding:10px;
+      font-weight:bold;
+      cursor:pointer;
+      background:#28a745;
+      color:white;
+      border:none;
+      border-radius:6px;
+    ">
+      Continuar a la compra
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =============== SCRIPT DEL CARRITO =============== -->
+<script>
+let carrito = [];
+
+if (localStorage.getItem("carrito")) {
+  carrito = JSON.parse(localStorage.getItem("carrito"));
+}
+
+function actualizarCarrito() {
+  const lista = document.getElementById('carrito-lista');
+  const totalSpan = document.getElementById('carrito-total');
+  const countSpan = document.getElementById('carrito-count');
+
+  lista.innerHTML = '';
+
+  let total = 0;
+
+  carrito.forEach((item, index) => {
+    total += item.precio;
+
+    const div = document.createElement('div');
+    div.style.display = 'flex';
+    div.style.alignItems = 'center';
+    div.style.justifyContent = 'space-between';
+    div.style.marginBottom = '10px';
+    div.style.gap = '10px';
+
+    div.innerHTML = `
+      <img src="${item.img}" style="width:45px;height:auto;border-radius:4px;">
+      <div style="flex:1;">
+        <span style="font-size:14px;">${item.nombre}</span><br>
+        <strong style="font-size:13px;">$${item.precio}</strong>
+      </div>
+      <button onclick="eliminarProducto(${index})"
+        style="cursor:pointer;border:none;background:none;font-size:18px;">✖</button>
+    `;
+
+    lista.appendChild(div);
+  });
+
+  totalSpan.textContent = total.toLocaleString();
+  countSpan.textContent = carrito.length;
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+function agregarProducto(nombre, precio, img) {
+  carrito.push({ nombre, precio, img });
+  actualizarCarrito();
+}
+
+function eliminarProducto(i) {
+  carrito.splice(i, 1);
+  actualizarCarrito();
+}
+
+function borrarCarrito() {
+  carrito = [];
+  actualizarCarrito();
+}
+
+document.getElementById('carrito-icono').addEventListener('click', () => {
+  const panel = document.getElementById('carrito-panel');
+  panel.style.display = (panel.style.display === 'none' || panel.style.display === '') 
+    ? 'block' : 'none';
+});
+
+actualizarCarrito();
+</script>     
+<footer >
+  <div >
+    <div class="container" style="max-width: 100%;   ">
+      <div class="col-sm-4">
+
+        <img  src="banner.png" style="max-width: 250px;" > </div>
+          <div class="col-sm-4" style="text-align: center;" ><b>
+          <br><a href="aviso.html" style="color:black;">Aviso de privacidad</a>
+          <br><a href="terminos.html" style="color:black;">Términos y Condiciones </a>
+          <br><a href="contacto.html" style="color:black;">Contactanos</a> </b>
+          </div>
+          <b>
+<div class="col-sm-4" style="text-align:center;margin-top: 5px;color: black;" ><br><a href="#"style="color:black;"><br>
+<p>Autop. Lecheria - Chamapa Manzana 005, 54769 Cuautitlán Izcalli, Méx.
+</p></b></div></div>         
+<br><nav style="background-color: white;color:black;text-align: center;"><b>Todos los derechos reservados<br>Mattel - 2025 <br></nav></b></div></div>
+</footer>   
+ <script src="cms/assets/paginator.js"></script>
+    <script src="cms/assets/paginate.js"></script>
+    <script src="cms/assets/paginate-content.js"></script>
+   <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/b46844f7c3.js" crossorigin="anonymous"></script>
+  <script src="cms/assets/responsiveslides.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <div class="redes-flotantes ">
+<a href="https://api.whatsapp.com/send?phone=527228688427" target="_blank">
+<img src="w.png">
+</a>
+</div>
+</body>
+</html>
+

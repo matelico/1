@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<title>Mattel Mexico</title>  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="mat.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+ /* Container styling */
+.footer-newsletter__wrapper-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Title styling */
+.footer-newsletter__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inline form container */
+.footer-newsletter__form-inline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input styling */
+.footer-newsletter__form-inline-input {
+  flex-grow: 1;
+  position: relative;
+}
+
+.footer-newsletter__form-inline-input input {
+  width: 100%;
+  padding: 10px 50px 10px 15px; /* Padding to account for button */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded edges */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.footer-newsletter__form-inline-input input:focus {
+  border-color: #007bff;
+}
+
+/* Submit button inside the input */
+.footer-newsletter__form-inline-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #007bff;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-newsletter__form-inline-btn:hover {
+  background: #0056b3;
+}
+
+/* Error messages */
+.footer-newsletter__error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: none; /* Default hidden, shown dynamically */
+}
+
+/* Checkbox styling */
+.footer-newsletter__checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-newsletter__checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.footer-newsletter__checkbox label {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.footer-newsletter__checkbox a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-newsletter__checkbox a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .footer-newsletter__form-inline {
+    flex-direction: column;
+  }
+
+  .footer-newsletter__form-inline-btn {
+    position: relative;
+    transform: none;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .footer-newsletter__form-inline-input input {
+    padding: 10px 15px;
+  }
+}
+
+  a{color: black;
+
+  }
+ .container8{
+background: #4c4c4c;
+ }
+footer{
+    background:white;
+  color: black;
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.contenedor4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #53905b;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+/* Barra Superior */
+.topbar {
+  background-color: white;
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topbar__logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.topbar__logo {
+  height: 40px; /* Ajusta el tamaño de los logos */
+  width: auto;
+}
+
+/* Navbar */
+.navbar {
+  margin-top: 50px; /* Ajuste para no sobreponerse con la barra superior */
+}
+
+.navbar nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  font-size: 16px;
+}
+
+.navbar nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Añadir un pequeño hover para los logos */
+.topbar__logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Asegurarse de que el contenedor esté centrado */
+.container {
+
+  justify-content: center;
+
+  text-align: center; /* Centra el texto dentro del contenedor */
+  width: 100%;
+}
+
+/* Centrar los elementos dentro de las columnas */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Asegurarse de que las imágenes y los textos estén centrados dentro de cada columna */
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Asegura que las imágenes y textos se alineen verticalmente */
+  text-align: center; /* Centra el texto dentro de las columnas */
+}
+
+</style>
+
+</head>
+
+<body>
+ <header class=" navbar navbar-inverse">
+ <div class="topbar">
+    <div class="topbar__logo-container">
+
+  <a href="power-wheels.html" >
+        <img src="pown.png" class="topbar__logo">
+      </a>
+
+        <a href="hot-wheels.html" >
+        <img src="hotn.png" class="topbar__logo">
+      </a>
+        <a href="barbie.html" >
+        <img src="barn.png" class="topbar__logo">
+      </a>
+        <a href="fisher-price.html" >
+        <img src="fpn.png" class="topbar__logo">
+      </a>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse  navbar-fixed-top" style="background-color:#ea0028;">      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse"style="margin-top: 8px;">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="matn.png" style="padding: 5px 5px 3px 3px; " class="navbar-brand ">
+         
+        </div>
+       
+              
+        <div id="navbarMainCollapse" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                            <li><a href="nosotros.html" >Inicio</a></li>
+                           <li><a href="contacto.html" >Contactanos</a></li>
+            <li><a href='hot-wheels.html'>Hot Wheels</a></li>
+            <li><a href="fisher-price.html" >Fisher Price</a></li>
+            <li><a href="barbie.html" >Barbie</a></li>
+                        <li><a href="power-wheels.html">Power wheels</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+         <nav class=" navbar-inverse sub-navbar fixed-top"
+     >
+ 
+</nav>
+</header>
+<div class="contenedor"  >
+  <img src="ter.jpg"  class="img-responsive">
+  <div class="centrado">
+</div>
+</div>
+<section style="   flex: 1 1 50%; /* Ocupa la mitad del ancho */
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    text-align: justify;">
+
+
+
+<div class="text-block" id="text-block-blt69b6b7478d2435b8"><div class="text-block__components">
+          <h1>Declaración General De Privacidad En Línea De Mattel</h1>
+<p></p>
+<p>Actualizado el 24 de mayo de 2018</p>
+<p>Su privacidad es importante para nosotros dentro de la familia de empresas de Mattel. Esta declaración de privacidad describe la información que Mattel recopila de usted, a través de nuestras interacciones y a través de nuestros servicios de Mattel, y cómo usamos esa información. También describe qué información recopilan de ustedterceras partes, y cómo tanto ellos como nosotros usamos esa información. Los términos clave están en cursiva y subrayados (así) y se pueden encontrar en la sección de&nbsp;</p>
+<div><em>DEFINICIONES</em></div>
+<p>Esta Declaración de privacidad proporciona ejemplos de datos que recopilamos, cómo los usamos y elecciones que puede realizar; estos ejemplos pueden no ser exhaustivos o exclusivos.</p>
+<p>Esta afirmación se aplica a servicios de Mattel, incluyendo sitios web Mattel, aplicaciones, aplicaciones móviles, servicios en línea y productos conectados. Los sitios web Mattel también están sujetos a los&nbsp;<a href="https://www2.mattel.com/es-es/terms-and-conditions" target="_self">TÉRMINOS Y CONDICIONES DE MATTEL</a>. Se pueden aplicar otros términos, acuerdos de licencia de usuario final o reglas adicionales. Cada vez que use servicios de Mattel, usted acepta esta declaración. Si no está de acuerdo con todos los términos de esta Declaración de privacidad, no use servicios de Mattel.</p>
+<h4>DEFINICIONES</h4>
+<p><strong>Menor/menores (niño/niños).</strong>&nbsp;Individuos que no tienen la edad legal para dar su consentimiento a la obtención y procesamiento de su información personal. Para la mayoría de las zonas del mundo, se considera como tal a personas menores de 13 años. En el Espacio Económico Europeo (EEE), se considera como tal a personas menores de 16 años. Nos adherimos a las definiciones locales de "menores" para servicios de Mattel ubicados en jurisdicciones donde la edad es diferente.</p>
+<p><strong>Información.&nbsp;</strong>Datos que recopilamos. Incluye:</p>
+<ul>
+  <li><strong>Contenido generado por el usuario.</strong>&nbsp;Información que publica o sube como reseñas, comentarios, vídeos, imágenes o interacciones en las redes sociales. Lea más en «contenido generado por el usuario».</li>
+  <li><strong>Información de acceso.&nbsp;</strong>Información para identificar y validar a un usuario para permitir el acceso a un servicio de Mattel. Para menores, esta suele ser un nombre de usuario y una contraseña. Para los adultos, esta suele ser una contraseña más alguna información de contacto personal, como una dirección de correo electrónico.</li>
+  <li><strong>Información de contacto personal.</strong>&nbsp;Información que nos permite contactar con usted directamente, como su nombre completo, dirección de correo electrónico, domicilio, número de teléfono, número de móvil, etc.</li>
+  <li><strong>Información de encuestas.&nbsp;</strong>Respuestas a encuestas o a cuestionarios proporcionadas voluntariamente.</li>
+  <li><strong>Información de inicio de sesión en redes sociales.&nbsp;</strong>La información de acceso y otras informaciones (como listas de amigos) de una red social que un usuario elige compartir con Mattel para acceder a un servicio de Mattel o Sitio web Mattel.</li>
+  <li><strong>Información de pedidos.</strong>&nbsp;Información facilitada para comprar un producto o servicio de Mattel, incluidos los detalles necesarios para completar la transacción, como los productos pedidos, información del pago e información de contacto personal.</li>
+  <li><strong>Información del dispositivo.</strong>&nbsp;Información sobre el dispositivo, navegador o aplicación que está utilizando para acceder a un servicio de Mattel, como el sistema operativo, información del navegador, dirección de protocolo de Internet (IP), identificadores de dispositivo universal (UDID) e información similar.</li>
+  <li><strong>Información del pago.&nbsp;</strong>Números de tarjetas de crédito u otra información emitida por instituciones financieras para completar una transacción, incluyendo (según corresponda) información de contacto personal.</li>
+  <li><strong>Información personal.&nbsp;</strong>Información que identifica (ya sea directa o indirectamente) a un individuo en particular, como el nombre de la persona, dirección, dirección de correo electrónico, identificador del dispositivo, número de teléfono o identificador asignado. Cuando la información anónima está asociada directa o indirectamente con información personal, esta información anónima también se trata como información personal.</li>
+  <li>Para menores, la información personal también incluye fotos, vídeo y audio del niño.</li>
+  <li><strong>Información proporcionada por terceros.&nbsp;</strong>Datos compartidos con la familia de empresas de Mattel a través de un tercero.</li>
+  <li><strong>Información recopilada automáticamente.&nbsp;</strong>Información recopilada automáticamente cuando usa servicios de Mattel, incluyendo la información para facilitar su experiencia y ayudarnos a comprender a nuestros visitantes, como la información de su dispositivo, información sobre la red que está utilizando para acceder a servicios de Mattel (el idioma preferido, los sitios en línea o los servicios visitados antes de visitar un servicio de Mattel) y el contenido (incluidos los anuncios) que ve o en los que hace clic.</li>
+  <li><strong>Información sobre la ubicación.&nbsp;</strong>Información que le permite ubicarse con precisión, como a través de coordenadas de GPS en una aplicación móvil.</li>
+  <li><strong>Interés o información demográfica.&nbsp;</strong>Información sobre los juegos favoritos de un usuario, colores, personajes de Mattel y preferencias similares; o información sobre un visitante o usuario, como género, edad, educación, profesión, ocupación u otra información.</li>
+</ul>
+<p><strong>Publicidad basada en intereses.&nbsp;</strong>Anuncios orientados sobre productos y servicios que, según sus actividades, es probable que le interesen.</p>
+<p><strong>Familia de empresas de Mattel.</strong>&nbsp;Cuando nos referimos a la familia de empresas de Mattel en esta declaración, nos referimos a:</p>
+<ul>
+  <li>Mattel, Inc.,</li>
+  <li>Fisher-Price, Inc.,</li>
+  <li>American Girl Brands, LLC,</li>
+  <li>HIT Entertainment Limited, and</li>
+  <li>Mega Brands Inc.</li>
+  <li>MATTEL G.m.b.H., Hauptstraße 82, A-2384 Breitenfurt bei Wien, Austria</li>
+  <li>Mattel NV/SA, De Kleetlaan 4, 1831 Machelen, Belgium</li>
+  <li>Mattel Czech Republic s.r.o., The Forum, Václavské nám. 19, 110 00, Prague 1, Czech Republic</li>
+  <li>Mattel Northern Europe A/S, Langebrogade 5, 1411 Copenhagen, Denmark</li>
+  <li>Mattel France S.A., 3 allée des Fleurs, Parc de la Cerisaie, 94260 Fresnes, France</li>
+  <li>Mattel GmbH, Solmstrasse 4 83, D-60486 Frankfurt, Germany</li>
+  <li>Mattel AEBE, 1, Ethnarchou Makariou Av., 175 61 Palaio Faliro, Greece</li>
+  <li>Mattel Toys Hungary KFT., 2161 Csomád, Levente utca 14/A, Cégjgyzékszám</li>
+  <li>Mattel Srl., Via Filippo Turati, 4, Italia 20122 Milano (MI) Italy</li>
+  <li>Mattel Europa B.V., Gondel 1, 1186 MJ Amstelveen, The Netherlands</li>
+  <li>Mattel Poland Sp. z o.o., Prosta 67, 00-838 Warsaw, Poland</li>
+  <li>Mattel Portugal Lda, Rua Carlos Alberto da Mota Pinto, nº 17 3A 1070-313 Lisboa, Portugal</li>
+  <li>Mattel España S.A., Aribau, 200, 8th Floor, 08036 Barcelona, Spain</li>
+  <li>Mattel UK Ltd, 3rd Floor The Porter Building, 1 Brunel Way, Slough, SL1 1FQ United Kingdom</li>
+</ul>
+<p><strong>Sitios web Mattel.&nbsp;</strong>Sitios web ofrecidos por la familia de empresas de Mattel. Ver&nbsp;servicios de Mattel.</p>
+<p><strong>Servicios de Mattel.&nbsp;</strong>Todos los servicios en línea ofrecidos por la familia de empresas de Mattel, incluidos los sitios web (Sitios web Mattel), aplicaciones y productos conectados. Lea más en&nbsp;servicios de Mattel.</p>
+<p><strong>Terceras partes.</strong>&nbsp;Una empresa no relacionada con la familia de empresas de Mattel, incluyendo los sitios de terceros a los que nos vinculamos, o terceros que operan tiendas en línea o tiendas de aplicaciones móviles. Lea más en&nbsp;SOCIOS EXTERNOS Y SOCIOS TECNOLÓGICOS EXTERNOS.</p>
+<ul>
+  <li><strong>Socios externos o proveedores de servicios externos.</strong>&nbsp;Una tercera parte que Mattel ha captado para ayudarle a proporcionar servicios de Mattel, incluidos agentes, proveedores, proveedores de servicios y otros.</li>
+  <li><strong>Socios tecnológicos externos.</strong>&nbsp;Terceros cuyas tecnologías utilizamos para ofrecer contenido, entender a nuestros usuarios y ofrecer publicidad.&nbsp;</li>
+</ul>
+<h4>SERVICIOS DE MATTEL</h4>
+<p>Servicios de Mattel son servicios en línea ofrecidos por la familia de empresas de Mattel, incluyendo:</p>
+<ul>
+  <li>Sitios web Mattel,</li>
+  <li>Tiendas en línea,</li>
+  <li>Servicios de Mattel mejorados</li>
+  <li>Aplicaciones, y</li>
+  <li>Productos conectados. Verifique las PREGUNTAS FRECUENTES sobre el producto conectado específico para obtener información sobre las características, quién es responsable de la privacidad y qué información se recopila.</li>
+</ul>
+<p>Es posible que tenga que interactuar con un tercero para hacer una compra, descargar una aplicación o usar un producto conectado.</p>
+<p>Puede tener la oportunidad de conectar una aplicación o producto conectado a través de un servicio inalámbrico.</p>
+<p><strong>Sitios Mattel</strong></p>
+<p>Ofrecemos Sitios web Mattel que incluyen juegos, información, compras y otras actividades interactivas y estáticas de la familia de empresas de Mattel.</p>
+<ul>
+  <li>Algunos Sitios web Mattel o áreas de los sitios están destinadas aniños, y algunas están destinadas a adultos. Obtenga más información sobre sitios para menores y prácticas específicas para ellos en nuestra&nbsp;<a href="/es-es/pages/childrens-privacy-statement" target="_self">DECLARACIÓN DE PRIVACIDAD DE MENORES</a>.</li>
+  <li>No tiene que compartir ninguna información de contacto personal para usar la mayoría de los Sitios Mattel, pero muchosSitios Mattel para adultos y adolescentes contienen secciones especiales y privilegios para los miembros que se registren.</li>
+</ul>
+<p><strong>Tiendas en línea</strong></p>
+<p>Ofrecemos oportunidades para comprar productos en nuestras tiendas en línea, aplicaciones o a través de otros medios o socios comerciales. Las tiendas en línea son, a menudo, parte de un Sitio web Mattel mayor.</p>
+<ul>
+  <li>Los clientes deben ser mayores de 18 años, y disponer de un método de pago válido para realizar una compra.&nbsp;</li>
+  <li>Cuando un cliente realiza un pedido en línea, le enviaremos un correo electrónico de confirmación.&nbsp;</li>
+</ul>
+<p><strong>Servicios de Mattel mejorados</strong></p>
+<ul>
+  <li>Los</li>
+</ul>
+<p><strong>Aplicaciones&nbsp;</strong></p>
+<p>Ofrecemos una variedad de aplicaciones divertidas y atractivas con nuestras marcas. En algunos casos, las aplicaciones pueden estar disponibles a través de una tienda en línea de Mattel, pero con mayor frecuencia cuando descarga o compra una aplicación, o realiza una compra en la aplicación, lo hace a través de una tienda en línea de aplicaciones móviles de un tercero. Visite ENLACES Y TERCERAS PARTES para más información.</p>
+<p><strong>Por favor, tenga en cuenta:</strong>&nbsp;El uso de aplicaciones puede estar sujeto a un contrato de licencia de usuario final (EULA) además de a nuestros&nbsp;<a href="https://www2.mattel.com/es-es/terms-and-conditions" target="_self">TÉRMINOS Y CONDICIONES DE MATTEL</a>&nbsp;estándar.</p>
+<p><strong>Productos conectados</strong></p>
+<p>Mattel ofrece a padres y a hijos una variedad de productos que se conectan a internet. A veces trabajamos con socios externos para ofrecer productos conectados.</p>
+<ul>
+  <li>Algunos productos conectados, como los monitores para bebés, son puramente para uso de los padres.&nbsp;</li>
+  <li>El uso de productos conectados, generalmente, requiere la descarga de una aplicación asociada.&nbsp;</li>
+  <li>Las prácticas de privacidad de algunos productos conectados son responsabilidad de un tercero.&nbsp;</li>
+  <li>Le facilitamos una sección con PREGUNTAS FRECUENTES y otra información para ayudarle a comprender las características específicas del producto conectado (por ejemplo, si recopilan datos de voz o visuales), quién es responsable de la privacidad y qué información recabamos.</li>
+</ul>
+<p><strong>Servicios inalámbricos</strong></p>
+<p>Podemos comunicarnos con usted a través de su dispositivo móvil. Para recibir servicios de Mattel a través de una conexión inalámbrica, los visitantes deben dar su consentimiento y confirmar que entienden que su operador les cobrará para enviar y recibir mensajes de acuerdo con su plan de servicio correspondiente. Puede pedir que se vuelva a confirmar dicho acuerdo.&nbsp;</p>
+<ul>
+  <li>Se aplicarán tarifas de mensajería estándar a menos que se indique lo contrario. Si se aplican tarifas especiales, se notificará a los visitantes antes del registro.</li>
+  <li>Mattel no se hace responsable de los cargos relativos al servicio inalámbrico, como los cargos por mensajes asociados con el acceso o la conexión a los servicios de Mattel.</li>
+</ul>
+<h4><strong>¿QUÉ INFORMACIÓN RECABAMOS?</strong></h4>
+<ul>
+  <li>Recabamos información para permitirle registrarse para usar un servicio de Mattel. La información de acceso, a menudo, es todo lo que necesitamos para registrarlo.</li>
+</ul>
+<ul>
+  <li>Recabamos información de contacto personal.</li>
+  <li>Recopilamos otra información de tipo personal acerca de usted, como intereses o información demográfica, etc.</li>
+  <li>Recopilaremos contenido generado por el usuario cuando un servicio de Mattel le dé esa opción.</li>
+  <li>Recabamos información del dispositivo, información recopilada automáticamente, e información que le ayude a acceder a los servicios de Mattel (como la información de acceso, nombre de la red Wi-Fi, etc.).</li>
+</ul>
+<p>Recopilamosinformación suya y sobre usted para proporcionarle los servicios de Mattel. Lainformación que obtenemos depende del servicio de Mattel específico involucrado.</p>
+<p>Podemos recoger de usted:</p>
+<ul>
+  <li>Información de acceso.</li>
+</ul>
+<ul>
+  <li>Información de contacto personal.</li>
+  <li>Información recogida automáticamente.</li>
+  <li>Información de inicio de sesión en redes sociales.</li>
+  <li>Información de pedidos.</li>
+  <li>Información de pago.</li>
+  <li>Un nombre y dirección de envío cuando realice una compra y solicite que se lo enviemos a usted o a otra persona.</li>
+  <li>Información sobre la ubicación.</li>
+  <li>Las direcciones de correo electrónico, nombres de usuario u otra información sobre amigos a los que desea enviar una tarjeta electrónica o invitar a participar en una oferta en los servicios de Mattel.</li>
+  <li>Información sobre su hijo (como la información personal de su hijo y la información de contacto personal, incluyendo intereses o información demográfica).</li>
+  <li>Información que nos permite confirmar que usted es el padre o tutor legal de su hijo, incluida su edad.</li>
+  <li>Contenido generado por el usuario.</li>
+  <li>Nombre de la red Wi-Fi.</li>
+  <li>Información de encuestas.</li>
+</ul>
+<p></p><strong>¿CUANDO RECABAMOS INFORMACION?</strong>
+<p>Recogemosinformación:&nbsp;</p>
+<ul>
+  <li>que comparte voluntariamente;</li>
+  <li>para llevar a cabo una transacción; y</li>
+  <li>automáticamente.&nbsp;</li>
+</ul>
+<p>Por favor, consulte&nbsp;<a href="/es-es/pages/cookies-and-technologies" target="_self">ACERCA DE LAS COOKIES Y TECNOLOGÍAS</a>&nbsp;para más información sobre las tecnologías utilizadas para recabar su información automáticamente.</p>
+<p><strong>Obtenemos información que usted comparte voluntariamente</strong></p>
+<p>Puedes usar muchos de nuestros servicios de Mattel sin compartir ninguna información de contacto personal. Si lo elige, puede compartir su información de contacto personal, información personal, información de acceso, intereses o información demográfica, o la información de encuestas sobre usted o su hijo con nosotros cuando:</p>
+<ul>
+  <li>Se registre en un servicio de Mattel.</li>
+  <li>Juegue a un juego.</li>
+  <li>Disfrute una actividad interactiva.</li>
+  <li>Haga una compra en una de nuestras tiendas electrónicas (consulte «RECOPILAMOS INFORMACIÓN DE PEDIDOS»).</li>
+  <li>Pida un catálogo.</li>
+  <li>Participe en un sorteo o concurso.</li>
+  <li>Se registre para recibir información y ofertas.</li>
+  <li>Solicite un trabajo en línea.</li>
+  <li>Responda a una encuesta o cuestionario.</li>
+  <li>Envíe contenido generado por el usuario. Se aplican reglas especiales; descubra más en «CONTENIDO GENERADO POR EL USUARIO».</li>
+</ul>
+<p><strong>Obtenemos información de pedidos</strong></p>
+<p>Cuando un cliente coloca un artículo en el carrito de compra, realiza un pedido o solicita un catálogo en línea, obtenemos la información del pedido asociada con la transacción. Esto puede incluir información personal sobre su hijo.</p>
+<p>Los clientes pueden registrarse cuando hacen pedidos para completar cómodamente un pedido y realizar futuros pedidos. Cuando los clientes registrados regresan al sitio web para realizar pedidos sucesivos, pueden identificarse con su información de acceso.</p>
+<p><strong>Recogemos información automáticamente cuando accede a un servicio de Mattel</strong></p>
+<p>Recopilamos alguna información automáticamente, incluyendo la información del dispositivo, para proporcionarle servicios de Mattel apropiados o sitios Mattel (por ejemplo, en su idioma) cuando los usa o visita.</p>
+<h4><strong>¿POR QUÉ RECABAMOS INFORMACIÓN?</strong></h4>
+<p>Recogemos información suya para satisfacer sus necesidades, gestionar nuestro contenido y publicidad, operar de manera eficiente y mejorar los servicios de Mattel y productos.</p>
+<ul>
+  <li>Recogemos información para hacer lo que nos pide.</li>
+  <li>Recogemos información para proporcionarle información sobre servicios de Mattel y productos en los que usted, o su hijo, puedan estar interesados.</li>
+  <li>Recogemos información para apoyar a los servicios de Mattel y sus operaciones.</li>
+  <li>Recogemos información para mejorar los servicios de Mattel.</li>
+  <li>Recogemos información para mejorar nuestros productos.</li>
+  <li>Recogemos información para ofrecerle contenido.</li>
+  <li>Recogemos información para ofrecerle publicidad.</li>
+  <li>Recogemos información para mantener la seguridad.</li>
+  <li>Recogemos información para proteger nuestros derechos legales y los derechos legales de otros.</li>
+</ul>
+<p>Recogemosinformación:</p>
+<ul>
+  <li>Para proporcionarle servicios de Mattel.&nbsp;</li>
+  <li>Para responder a sus peticiones.</li>
+  <li>Para verificar su edad o la de su hijo.</li>
+  <li>Para completar una transacción.</li>
+  <li>Para realizar una transacción.</li>
+  <li>Para confirmar su pedido.</li>
+  <li>Para actualizar el estado de su pedido.</li>
+  <li>Para mantener sus suscripciones gratuitas o pagadas.</li>
+  <li>Para notificar a los ganadores de concursos y sorteos.</li>
+  <li>Para enviarle recomendaciones sobre servicios de Mattel de interés para usted o para sus hijos.</li>
+  <li>Para enviarle recomendaciones sobre productos de su interés, o del de sus hijos.</li>
+  <li>Para enviarle comunicaciones comerciales.</li>
+  <li>Para enviarle catálogos.</li>
+  <li>Para ofrecer publicidad basada en intereses.</li>
+  <li>Para analizar y medir la efectividad de nuestra publicidad.</li>
+  <li>Para apoyar a los servicios de Mattel.</li>
+  <li>Para entender a nuestros visitantes.</li>
+  <li>Para mejorar nuestros productos.</li>
+  <li>Para mejorar los servicios de Mattel.</li>
+  <li>Para desarrollar nuevos productos.&nbsp;</li>
+  <li>Para desarrollar nuevos servicios.</li>
+  <li>Para mantener la seguridad, integridad y calidad de nuestros productos y servicios.&nbsp;</li>
+  <li>Para proteger la propiedad intelectual.</li>
+  <li>Para proteger nuestros derechos legales.</li>
+  <li>Para proteger los derechos legales de otros.</li>
+</ul>
+<p>Podemos trabajar con socios externos, incluyendo socios tecnológicos de terceros, para algunos o todos estos propósitos. Puede averiguar más sobre algunas de estas terceras partes visitando «<a href="/es-es/pages/cookies-and-technologies" target="_self">ACERCA DE LAS COOKIES Y TECNOLOGÍAS</a>».</p>
+<p>Podemos combinar toda la información recopilada para comprender mejor sus necesidades, mejorar los servicios de Mattel y operaciones, administrar el contenido y la publicidad, enviarle ofertas e información y brindarle un mejor servicio.</p>
+<p>Si, bajo las leyes de su zona, necesitamos obtener su consentimiento para recabar información para un propósito particular, lo haremos en el momento en que obtengamos la información.</p>
+<h4><strong>INFORMACIÓN DE OTRAS FUENTES</strong></h4>
+<p>A veces, obtenemos información proporcionada por terceros acerca de usted y la combinamos con otra información personal que hemos recabado.</p>
+<p>Podemos recoger la información de autenticación.</p>
+<p><em>Recopilamos información de otras fuentes</em></p>
+<p>Podríamos obtener información proporcionada por terceros acerca de usted desde fuentes comerciales. Podemos combinar esa información con otra información personal sobre usted que hayamos recopilado.</p>
+<p>También podemos recoger información de autenticación (por ejemplo, para verificar que sea titular de una tarjeta de crédito autorizada).</p>
+<h4><strong>COMPARTIR SU INFORMACIÓN</strong></h4>
+<p>Podemos compartir información como:</p>
+<ul>
+  <li>Compartimos la información obtenida dentro de la familia de empresas de Mattel y con nuestros socios externos.</li>
+  <li>Compartimos alguna información de contacto personal con terceros para fines comerciales bajo su consentimiento.</li>
+  <li>Como es habitual en las empresas de catálogos, compartimos las direcciones postales (pero no las direcciones de correo electrónico) con otras empresas de catálogos cuyos productos y servicios podrían ser de su interés. Si es necesario, pedimos su consentimiento primero. Le damos la oportunidad de no participar.</li>
+  <li>Si proporciona información de inicio de sesión en redes sociales, Mattel compartirá información con su red social.</li>
+  <li>Compartimos información sobre el uso y los intereses que obtenemos a través de cookies y tecnología con socios tecnológicos externos, y obtendremos el consentimiento si así lo exige la ley aplicable. Conozca más sobre SUS OPCIONES Y CONTROLES.</li>
+  <li>Compartimos cualquier información (incluyendo información personal) obtenida según sea necesario para satisfacer una solicitud legal o citación, proteger la propiedad o la seguridad personal, cuando un negocio de Mattel se compra o vende, o según lo permitido o requerido por la ley.&nbsp;</li>
+</ul>
+<p>Compartimos la información obtenida dentro de la familia de empresas de Mattel, y con nuestros socios externos para que cumplan con sus tareas en nuestro nombre.&nbsp;</p>
+<p>A excepción de lo descrito en esta declaración de privacidad, no compartimos información de contacto personal que recibimos en línea de o sobre menores con otras compañías fuera de la familia de empresas Mattel para sus fines comerciales directos.&nbsp;</p>
+<p>Información compartida con nuestros socios externos</p>
+<p>Podemos compartir su información con una variedad de socios externos. Ellos:</p>
+<ul>
+  <li>Nos proporcionan el mantenimiento y la seguridad de bases de datos y servidores.</li>
+  <li>Nos ayudan a administrar transacciones.</li>
+  <li>Nos ayudan a procesar y cumplir órdenes o solicitudes.</li>
+  <li>Nos ayudan a analizar nuestras ofertas.</li>
+</ul>
+<p>También brindan otros servicios similares a la familia de empresas de Mattel. Requerimos a los socios externos que tengan acceso a la información que salvaguarden dicha información.</p>
+<p>Información compartida con terceras partes con fines comerciales</p>
+<ul>
+  <li>Compartimos ciertos nombres y direcciones postales de los destinatarios del catálogo con terceros cuyos catálogos pudieran ser de su interés. Si es necesario, pedimos su consentimiento primero. Usted puede salir en cualquier momento.&nbsp;</li>
+  <li>Con su consentimiento, Mattel comparte su información de contacto personal con compañías externas que ofrecen productos o servicios que pueden interesarle.&nbsp;</li>
+  <li>Eliminaremos su nombre de la lista que proporcionamos a empresas externas si se comunica con nosotros. Por favor, visite las&nbsp;PREFERENCIAS DE COMUNICACIÓN DE MATTEL&nbsp;(a excepción de American Girl) o&nbsp;PREFERENCIAS DE COMUNICACIÓN DE AMERICAN GIRL&nbsp;(sólo para American Girl).&nbsp;</li>
+</ul>
+<p><em>Información compartida con redes sociales</em></p>
+<p>Si proporciona información de inicio de sesión en redes sociales para iniciar sesión en un servicio de Mattel o sitio web Mattel, la información se compartirá con su red social, como el hecho de que haya iniciado sesión en servicio de Mattel o sitio web Mattel, o su actividad en el servicio de Mattel o sitio web Mattel. Podremos enviar mensajes a través de la red social para comunicarnos con usted.</p>
+<p><em>Información compartida con socios tecnológicos externos</em></p>
+<p>Compartimos información sobre el uso y los intereses que obtenemos a través de cookies y tecnología con socios tecnológicos externos, y obtendremos el consentimiento si así lo exige la ley aplicable. Descubra más en «SUS OPCIONES Y CONTROLES».</p>
+<p><em>Información compartida para proteger los derechos legales y cumplir con las obligaciones legales</em></p>
+<p>Si Mattel cree que el comportamiento de cualquier persona en cualquier servicio de Mattel puede dañar, a los servicios de Mattel, o a cualquier persona o propiedad, podemos divulgar la información personal para prevenir tal daño. En ese caso, podríamos intentar identificar a los infractores, contactar con ellos o iniciar acciones legales contra ellos.&nbsp;<br />Podemos divulgar información personal si creemos que la divulgación es requerida o permitida por la ley, o en respuesta a una solicitud legal o citación.</p>
+<h4>ENLACES Y TERCERAS PARTES</h4>
+<ul>
+  <li>Los servicios de Mattel pueden vincular o usar otro contenido de internet. No controlamos las prácticas de recopilación de datos ni los términos de uso de ningún sitio de un tercero. La política de privacidad de terceros y los términos de uso aplican a esos sitios.&nbsp;</li>
+  <li>La configuración de su ordenador o dispositivo móvil puede permitirle bloquear total o parcialmente otro contenido, pero esa configuración puede no ser efectiva en todos los casos.</li>
+  <li>Puede hacer pedidos o registrarse a través de un proveedor externo. La política de privacidad y los términos del servicio de terceras partes se aplican a la actividad realizada con el proveedor externo.</li>
+  <li>Trabajamos con socios externos para ofrecer servicios de Mattel.</li>
+</ul>
+<p><em>Otros sitios a los que nos vinculamos</em></p>
+<p>Los servicios de Mattel pueden conectarse con otros contenidos de internet que no controlamos.&nbsp;</p>
+<ul>
+  <li>Podremos vincularnos con redes sociales o sitios que venden nuestros productos.</li>
+  <li>Podemos vincularnos a otros sitios o servicios de terceros que creemos que puedan ser de su interés.</li>
+  <li>Le recomendamos que revise cuidadosamente la política de privacidad y los términos de uso de los proveedores de terceros, ya que no están cubiertos por esta declaración de privacidad y Mattel no se responsabiliza de ellos.</li>
+  <li>Puede modificar la configuración de su navegador, dispositivo u otro software para bloquear a esos terceros. Algunas veces esas configuraciones pueden no ser efectivas.</li>
+</ul>
+<p><em>Proveedores externos</em></p>
+<p>Cuando realiza un pedido o se registra en un servicio de Mattel en el que las transacciones son manejadas por un proveedor externo (por ejemplo, PayPal), esas transacciones se realizan a través del sitio web del proveedor.&nbsp;</p>
+<ul>
+  <li>Debe asegurarse de revisar los términos y condiciones del sitio web y la política de privacidad de las terceras partes antes de enviar cualquier información personal o participar en cualquier transacción a través del sitio de la tercera parte.&nbsp;</li>
+  <li>Mattel no es responsable de ninguna transacción realizada con terceros, ni de su contenido, términos y condiciones, o políticas de privacidad.</li>
+</ul>
+<p><em>Socios externos y socios tecnológicos externos</em></p>
+<ul>
+  <li>Trabajamos con socios externos para ofrecer servicios de Mattel. Les pedimos que manejen con cuidado la información que se les ha confiado.</li>
+  <li>También trabajamos con socios tecnológicos externos para proporcionar contenido, entender a nuestros usuarios y ofrecer publicidad en nuestros sitios web Mattel y en sitios de terceras partes. Obtenga más información en «<a href="/es-es/pages/cookies-and-technologies" target="_self">ACERCA DE LAS COOKIES Y TECNOLOGÍAS</a>», y descubra las herramientas disponibles para ayudarle a controlar algunas de estas tecnologías en la&nbsp;<a href="https://www2.mattel.com/content/dam/mattel-com/documents/Third_Party_Technology_List.pdf" target="_self">LISTA DE TECNOLOGÍA DE TERCERAS PARTES</a>&nbsp;y la&nbsp;<a href="https://www2.mattel.com/content/dam/mattel-com/documents/Mobile_Third_Party_Technology_List_Aug_21.pdf" target="_self">LISTA DE TECNOLOGÍA MÓVIL DE TERCERAS PARTES.</a></li>
+</ul>
+<p><em>Tiendas de aplicaciones móviles</em></p>
+<ul>
+  <li>Es posible que deba registrarse e iniciar sesión en una tienda de aplicaciones móviles de un tercero antes de que pueda descargar o comprar una aplicación Mattel, o hacer compras en la aplicación usando una aplicación Mattel.&nbsp;</li>
+  <li>Al descargar una aplicación de Mattel, o al utilizar una aplicación de Mattel con funciones en línea a través de su plataforma móvil, el proveedor de la aplicación también suele recopilar cierta informaciónrelacionada con el dispositivos y la aplicación. Mattel no controla los requisitos o políticas de las tiendas de aplicaciones, debe revisar la política de privacidad y los términos de uso de las tiendas de aplicaciones móviles antes de descargar o usar cualquier aplicación y verificar la configuración de su dispositivo para ver las opciones de control.&nbsp;</li>
+</ul>
+<h4>SUS OPCIONES Y CONTROLES</h4>
+<p><strong>Sus opciones</strong></p>
+<p>Respetamos sus decisiones para recibir nuestras ofertas y actualizaciones promocionales. Puede cambiar las comunicaciones que recibe de nosotros en&nbsp;PREFERENCIAS DE COMUNICACIÓN DE MATTEL&nbsp;o en&nbsp;PREFERENCIAS DE COMUNICACIÓN DE AMERICAN GIRL.</p>
+<p>Puede tomar decisiones sobre su información personal que Mattel tiene en el&nbsp;<a href="https://privacy.mattel.com/" target="_self">PORTAL DE ELECCIÓN MATTEL GDPR</a>&nbsp;(a excepción de American Girl) o en el&nbsp;<a href="https://privacy.americangirl.com/" target="_self">PORTAL DE ELECCIÓN AMERICAN GIRL GDPR</a>&nbsp;(sólo para American Girl). Los padres pueden acceder a la información personal de sus hijos y tomar decisiones al respecto usando el&nbsp;<a href="https://assets.contentstack.io/v3/assets/blt485dfa12bf05dba5/blt15d2eceb3372f9fe/62ebfccf022e5e700e65db48/ParentalAccessForm.pdf" target="_self">FORMULARIO DE ACCESO PARENTAL</a>.</p>
+<p><strong>Controles de la aplicación</strong></p>
+<p>Su dispositivo puede permitirle bloquear o administrar las notificaciones automáticas, la información sobre la ubicación, las compras en la aplicación o la capacidad de acceder a la web.</p>
+<p><em>Sus opciones sobre comunicaciones</em></p>
+<p>Si desea dejar de recibir actualizaciones promocionales o información sobre productos en cualquier momento, puede cambiar sus&nbsp;PREFERENCIAS DE COMUNICACIÓN DE MATTEL&nbsp;o sus&nbsp;PREFERENCIAS DE COMUNICACIÓN DE AMERICAN GIRL. Nuestras comunicaciones postales y correos electrónicos también incluirán información sobre cómo renunciar a participar. Las solicitudes de exclusión de correo electrónico se procesarán en 10 días hábiles. Las solicitudes de cancelación postal pueden tardar más.</p>
+<p><em>Sus opciones y control sobre su información personal</em></p>
+<p>Si desea acceder, actualizar o eliminar su información personal, retirar su consentimiento a nuestra obtención o uso de su información personal, objetar a nuestro procesamiento de su información personal o solicitar una copia portátil de su información personal, puede acceder al&nbsp;<a href="https://privacy.mattel.com/" target="_self">PORTAL DE ELECCIÓN MATTEL SOBRE GDPR</a>&nbsp;(a excepción de American Girl) o al&nbsp;<a href="https://privacy.americangirl.com/" target="_self">PORTAL DE ELECCIÓN AMERICAN GIRL SOBRE GDPR</a>&nbsp;(sólo para American Girl). Puede usar estos portales para tomar decisiones sobre la información que Mattel tiene sobre usted.</p>
+<p><em>Controles parentales</em></p>
+<p>Los padres pueden acceder a los datos de sus hijos y tomar decisiones sobre cómo Mattel usa esos datos, incluida la actualización o eliminación de los datos, utilizando el&nbsp;<a href="https://assets.contentstack.io/v3/assets/blt485dfa12bf05dba5/blt15d2eceb3372f9fe/62ebfccf022e5e700e65db48/ParentalAccessForm.pdf" target="_self">FORMULARIO DE ACCESO PARENTAL</a>.</p>
+<p><em>Controles de la aplicación</em></p>
+<p>Con las aplicaciones, será capaz de:</p>
+<ul>
+  <li>Usar la configuración y los controles integrados de su dispositivo móvil para:<ul>
+      <li>Administrar notificaciones automáticas.</li>
+      <li>Gestionar información sobre la ubicación.</li>
+      <li>Administrar o restringir compras en la aplicación.</li>
+      <li>Administrar los permisos de cámara, micrófono y fotografía, álbum o galería.</li>
+    </ul>
+  </li>
+  <li>Bloquee la navegación a la web desactivando el acceso a la red en el dispositivo o cerrando el navegador.</li>
+</ul>
+<p>El acceso o la disponibilidad de los controles pueden variar según su dispositivo.</p>
+<h4>PRIVACIDAD DE MENORES</h4>
+<p>Esta sección resume nuestra&nbsp;</p>
+<p><a href="/es-es/pages/childrens-privacy-statement" target="_self">DECLARACIÓN DE PRIVACIDAD PARA MENORES</a>, la cual puede revisar para obtener todos los detalles completos.&nbsp;<strong>Nota especial para padres y tutores legales </strong>Tomamos medidas especiales para proteger a los niños como se define en esta declaración de privacidad. Por favor, ayúdenos a proteger la privacidad de sus hijos enseñándoles a nunca proporcionar información personal sin su permiso.&nbsp;</p>
+<p><strong>Protección de la privacidad de los menores</strong></p>
+<ul>
+  <li>No obtenemos información de contacto personal de menores en servicios Mattel dirigidos a niños sin el consentimiento de un padre o tutor legal, excepto en circunstancias limitadas autorizadas por la ley.</li>
+  <li>Recopilamos alguna información (como la dirección IP, el UDID del dispositivo móvil, el sistema operativo, etc.) automáticamente y utilizamos tecnologías como las cookies para ofrecer funcionalidad y respaldar nuestras operaciones. Obtendremos el consentimiento cuando sea necesario.</li>
+  <li>No pedimos más información personal de la que es necesaria para que un niño participe en una actividad.</li>
+  <li>Tomamos medidas para impedir que menores publiquen o divulguen públicamente información personal.</li>
+  <li>Usamos la tecnología de monitoreo y filtrado en un esfuerzo por prevenir que menores publiquen información personal sin el consentimiento de los padres en los servicios de Mattel dirigidos a menores.</li>
+  <li>Es posible que solicitemos a los visitantes que proporcionen una fecha de nacimiento o información sobre la ubicación geográfica antes de acceder a un servicio de Mattel o proporcionar información personal.</li>
+</ul>
+<p>Los padres podrán acceder y pedirnos que actualicemos o eliminemos la información de sus hijos usando el&nbsp;<a href="https://assets.contentstack.io/v3/assets/blt485dfa12bf05dba5/blt15d2eceb3372f9fe/62ebfccf022e5e700e65db48/ParentalAccessForm.pdf" target="_self">FORMULARIO DE ACCESO PARENTAL</a>.&nbsp;Para más información sobre la privacidad de los menores, por favor, revise nuestra&nbsp;<a href="/es-es/pages/childrens-privacy-statement" target="_self">DECLARACIÓN DE PRIVACIDAD DE MENORES completa</a>.</p>
+<p>Es posible que pueda publicar o subir contenido generado por el usuario en servicios de Mattel.</p>
+<p>Algunos servicios de Mattel pueden ofrecerle la oportunidad de subir contenido generado por el usuario.&nbsp;</p>
+<ul>
+  <li>No todos los servicios de Mattel le permiten publicar contenido generado por el usuario.<ul>
+      <li>La opción de compartir en redes sociales a través de los servicios de Mattel dirigidos a menoresestá estructurado para que ninguna información de contacto personal, de ningún menor, se comparta entre los visitantes a menos que se obtenga el consentimiento parental.&nbsp;</li>
+      <li>No accedemos a su dispositivo, cámara, micrófono, lista de contactos, fotos, videos ni archivos de audio a menos que usted dé su consentimiento.&nbsp;</li>
+      <li>Algunos de nuestros productos conectados no estarán completamente operativos si no habilita la cámara o el micrófono.&nbsp;</li>
+    </ul>
+  </li>
+  <li>El registro del usuario, o de un padre en nombre de un hijo para los servicios de Mattel dirigidos a menores, puede ser necesario para activar el servicio de Mattel o acceder a todas las funciones.&nbsp;</li>
+  <li>Se pueden aplicar reglas especiales a las actividades en redes sociales. Asegúrese de revisar cuidadosamente cualquier regla adicional publicada, así como los&nbsp;<a href="https://www2.mattel.com/es-es/terms-and-conditions" target="_self">TÉRMINOS Y CONDICIONES DE MATTEL</a>.</li>
+</ul>
+<h4>SEGURIDAD</h4>
+<p>Nos esforzamos por mantener la seguridad de la información, pero no podremos garantizar que las medidas para asegurar la información sean inquebrantables.</p>
+<p>Nos esforzamos por proteger la información que nos proporciona cuando usa nuestros servicios de Mattel a través de medios comercialmente razonables.</p>
+<ul>
+  <li>Nosotros y nuestros agentes y afiliados utilizamos el cifrado u otras medidas de seguridad para proteger la información de pagos durante la transmisión y adoptar procedimientos internos para salvaguardar esta información en nuestros sistemas.&nbsp;</li>
+  <li>Requerimos a nuestros socios externos que sigan las mejores prácticas aceptadas por la industria para salvaguardar la información de contacto personal y otras informaciones que manejen.</li>
+  <li>Tenga en cuenta que, aunque trabajamos duro para proteger su información, ningún método es 100% seguro.&nbsp;</li>
+  <li>No podemos garantizar los procedimientos de seguridad de terceras partes.</li>
+  <li>Le recomendamos que aprenda y use herramientas, hábitos y prácticas para proteger su seguridad y la de su familia. Por ejemplo, le recomendamos que use contraseñas únicas que sean difíciles de copiar o adivinar por los demás.</li>
+</ul>
+<h4>TRANSFERENCIAS INTERNACIONALES DE DATOS</h4>
+<ul>
+  <li>Servicios Mattel y los servidores se rigen por la ley de EE.UU., que puede tener requisitos de privacidad diferentes en lo relativo a su información de aquellos del país en el que reside.</li>
+  <li>Nuestros servidores están en los Estados Unidos y el Reino Unido. También podemos usar servicios en la nube.</li>
+  <li>Usamos cláusulas contractuales estándar para transferir información personal del Espacio Económico Europeo (EEE) o Suiza a países que no pertenecen al EEE.</li>
+  <li>Su uso de los servicios de Mattel está sujeto a la recopilación, transferencia, procesamiento y uso de datos de acuerdo con esta declaración de privacidad.</li>
+  <li>No utilice Servicios Mattel si no está de acuerdo con esta declaración de privacidad.&nbsp;</li>
+</ul>
+<p>Los servicios de Mattel, los servidores que hacen que los servicios de Mattel estén disponible y las bases de datos donde tenemos la información pueden estar ubicados en países donde las leyes de privacidad difieran de aquellas aplicables en el que usted reside.&nbsp;</p>
+<ul>
+  <li>Los servidores para los servicios de Mattel están ubicados en los Estados Unidos y el Reino Unido. Podemos usar servicios en la nube cuyos servidores pueden estar en cualquier parte del mundo.</li>
+  <li>Para usuarios cuyo uso de los servicios de Mattel resulte en la transferencia de información personal del Espacio Económico Europeo (EEE) o Suiza a países no pertenecientes al EEE, nos amparamos en cláusulas contractuales estándar.</li>
+  <li>Mediante el uso de los servicios de Mattel, la transferencia, recogida, procesamiento y uso de los datos se llevará a cabo como se especifica en esta declaración de privacidad, nuestros&nbsp;<a href="https://www2.mattel.com/es-es/terms-and-conditions" target="_self">TÉRMINOS Y CONDICIONES</a>, y cualquier otro término proporcionado en el momento de la recopilación.&nbsp;</li>
+  <li>Si no acepta la transferencia, recopilación, procesamiento o uso de estos datos de acuerdo con estos términos, no use los servicios.</li>
+</ul>
+<h4><strong>ACTUALIZACIONES A ESTA DECLARACIÓN DE PRIVACIDAD</strong></h4>
+<ul>
+  <li>Actualizaremos esta declaración de privacidad periódicamente mediante su publicación aquí.</li>
+  <li>No cambiaremos la forma en que manejamos la información obtenida previamente sin dar un previo aviso. Si corresponde, también obtendremos su consentimiento.</li>
+</ul>
+<p>Es posible que actualicemos nuestra declaración de privacidad cada cierto tiempo. Cuando esto suceda, le notificaremos las nuevas disposiciones publicándolas en nuestro sitios Mattel.&nbsp;</p>
+<ul>
+  <li>No haremos un cambio material en la forma en que manejamos la información personal recopilada previamente sin previo aviso y, según sea necesario, con consentimiento.</li>
+</ul>
+<h4>SUS DERECHOS DE PRIVACIDAD EN CALIFORNIA</h4>
+<p>Si es residente en California, tiene ciertos derechos.</p>
+<p>Conforme al Código Civil de California § 1798.83, los residentes en California tienen derecho a recibir, una vez al año, información acerca de las terceras partes con quienes hemos compartido información acerca de usted con fines comerciales durante el año anterior, y una descripción de las categorías de la información personal compartida. Para realizar dicha solicitud, complete y envíenos el&nbsp;<a href="http://corporate.mattel.com/CAShineTheLightActRequestForm.pdf" target="_self">FORMULARIO DE SOLICITUD DE PRIVACIDAD</a>. Le responderemos dentro de los 30 días posteriores a la recepción de dicha solicitud.</p>
+<h4>SUS DERECHOS DE PRIVACIDAD EN EUROPA</h4>
+<p>Si es ciudadano de un estado miembro del Espacio Económico Europeo (EEE) y tiene preguntas sobre las prácticas de privacidad de Mattel, puede ponerse en contacto con las autoridades de supervisión del EEE para compartir sus dudas.</p>
+<p>Si es ciudadano de un estado miembro del Espacio Económico Europeo (EEE), puede ejercer sus derechos en virtud del reglamento general de protección de datos (GDPR por sus siglas en inglés) visitando el&nbsp;</p><a href="https://privacy.mattel.com/" target="_self">PORTAL DE ELECCIÓN MATTEL SOBRE GDPR</a>&nbsp;o el&nbsp;<a href="https://privacy.americangirl.com/" target="_self">PORTAL DE ELECCIÓN AMERICAN GIRL SOBRE GDPR</a>.<p>También puede ponerse en contacto con las autoridades de supervisión dentro del EEE, incluso dentro de su propio estado miembro, sobre las inquietudes que tenga relacionadas con las prácticas de privacidad de Mattel. La autoridad de supervisión principal para los servicios de Mattel ofrecida en el EEE es la autoridad holandesa de protección de datos, la Autoriteit Persoonsgegevens.</p>
+<h4>NO RASTREAR</h4>
+<p>No tomamos medidas para responder a las señales de no rastrear disponibles en algunos navegadores.</p>
+<p>Algunos navegadores web pueden transmitir señales de "no rastrear". Los navegadores web pueden incorporar o activar estas funciones de forma diferente, por lo que no está claro si los usuarios las han activado conscientemente. Como resultado, en este momento no tomamos medidas para responder a tales señales. Puede administrar sus preferencias de cookies utilizando la configuración de su propio navegador para aceptar o bloquear algunas o todas las cookies, o recibir un aviso para que pueda dar su consentimiento a las cookies. Si bloquea todas las cookies, algunas características de los Sitios Mattel podrían no estar disponibles para usted.</p>
+<h4>CERTIFICACIONES</h4>
+<p>Los servicios de Mattel que muestran los sellos siguientes están certificados por las organizaciones respectivas:&nbsp;</p>
+<ul>
+  <li>Programa certificado de privacidad de la junta de calificación de software de entretenimiento (ESRB]</li>
+  <li>Programa sello kidSAFE</li>
+</ul>
+<p><em>Programa certificado de privacidad ESRB</em></p>
+<p>Mattel es un licenciatario válido y un miembro participante en buena posición del&nbsp;<a href="http://www.esrb.org/privacy/faq.aspx#10" target="_self">PROGRAMA CERTIFICADO DE PRIVACIDAD DE LA JUNTA DE CALIFICACIÓN DE SOFTWARE DE ENTRETENIMIENTO</a>&nbsp;("ESRB certificado de privacidad por sus siglas en inglés"). Los sellos de privacidad certificados ESRB aparecen en los servicios de Mattel que participan en el programa. El programa certificado de privacidad ESRB está diseñado para garantizar que nuestras prácticas de divulgación de la información son responsables y apropiadas.&nbsp;</p>
+<p>Para ayudar a proteger su privacidad, hemos emprendido voluntariamente esta iniciativa de privacidad y hemos puesto bajo revisión y certificación los servicios de Mattel, donde el sello ESRB certificado de privacidad ha sido publicado, por la ESRB certificado de privacidad para cumplir con los requisitos establecidos en línea relativos a prácticas de obtención, uso y divulgación de información. Como licenciatarios de este programa de privacidad, estamos sujetos a auditorías de servicios y otros mecanismos de cumplimiento y rendición de cuentas administrados de manera independiente por la ESRB.</p>
+<p>Si considera que no hemos respondido a su consulta relacionada con la privacidad sobre un servicio de Mattel o sitio Mattel que lleva un sello certificado de privacidad ESRB, o su consulta sobre un servicio de Mattel o sitio Mattel no se ha abordado satisfactoriamente, póngase en contacto con ESRB en&nbsp;<a href="http://www.esrb.org/privacy/contact.aspx" target="_self">http://www.esrb.org/privacy/contact.aspx</a>&nbsp;o:&nbsp;</p>
+<p>ESRB&nbsp;</p>
+<p>Att.: Programa certificado de privacidad</p>
+<p>420 Lexington Avenue, Suite 2240&nbsp;</p>
+<p>Nueva York, NY 10170</p>
+<p>privacy@esrb.org</p>
+<p>ESRB no está afiliado a Mattel y no puede ayudarle con asuntos no relacionados con la privacidad.</p>
+<p><em>Programa sello Kidsafe</em></p>
+<p>Algunos productos conectados de Mattel llevan el sello kidSAFE. Esto significa que los productos y los servicios de Mattel que llevan el sello kidSAFE han sido independientemente revisados, certificados o incluidos en una lista por kidSAFE para cumplir con ciertos estándares de seguridad o privacidad en línea, y que Mattel y cualquier socio tecnológico con el que se haya asociado están autorizados a exhibir el sello kidSAFE en relación con ese producto.</p>
+<p>Si tiene alguna pregunta sobre un servicio de Mattel o producto que lleva el sello kidSAFE, por favor, contacte con kidSAFE en&nbsp;<a href="https://www.proprofs.com/survey/t/?title=xs7un" target="_self">https://www.proprofs.com/survey/t/?title=xs7un</a></p>
+<h4>HAGANOS LLEGAR SUS PREGUNTAS</h4>
+<p>Siempre nos esforzamos por ser transparentes y claros acerca de nuestras políticas. Por favor, contáctenos si tiene preguntas.&nbsp;&nbsp;</p>
+<p>Si tiene alguna pregunta, ¡no dude en contactarnos! Si es padre y desea acceder a la información de su hijo, por favor, use el&nbsp;<a href="https://assets.contentstack.io/v3/assets/blt485dfa12bf05dba5/blt15d2eceb3372f9fe/62ebfccf022e5e700e65db48/ParentalAccessForm.pdf" target="_self">FORMULARIO DE ACCESO PARENTAL</a>. Si desea actualizar o cambiar sus preferencias al recibir nuestros mensajes comerciales, visite&nbsp;PREFERENCIAS DE COMUNICACIÓN DE MATTEL&nbsp;(a excepción de American Girl) o&nbsp;PREFERENCIAS DE COMUNICACIÓN DE AMERICAN GIRL&nbsp;(sólo para American Girl). Si desea encontrar la información que Mattel tiene sobre usted, o tomar decisiones al respecto, utilice el&nbsp;<a href="https://privacy.mattel.com/" target="_self">PORTAL DE ELECCIÓN MATTEL SOBRE GDPR</a>&nbsp;(a excepción de American Girl) o el&nbsp;<a href="https://privacy.americangirl.com/" target="_self">PORTAL DE ELECCIÓN AMERICAN GIRL SOBRE GDPR</a>&nbsp;(sólo para American Girl).</p>
+<p>Para Mattel, Fisher-Price, Fuhu/Nabi Brands, HIT Entertainment y MEGA Brands:</p>
+<ul>
+  <li>Mattel<br />Servicio al consumidor<br />636 Girard Avenue<br />East Aurora, NY 14052<br />En EE.UU. o Canadá: 800-524-TOYS (800-524-8697)</li>
+</ul>
+<p>correo electrónico: <a href="https://consumersupport.mattel.com/mattelsupport/s/create-case">Mattel Global Consumer Support</a></p>
+<p>Si se encuentra fuera de los EE.UU. o Canadá, por favor, contáctenos&nbsp;<a href="https://service.mattel.com/us/intl.aspx" target="_self">AQUÍ</a>.</p>
+<p>Para American Girl:</p>
+<ul>
+  <li>American Girl<br />Apartado postal Box 620497<br />Middleton, WI 53562-0497<br />Teléfono: 800-845-0005<br />Fax: 608-836-0761<br /><br />correo electrónico: <a href="mailto:service@americangirl.com" target="_self">service@americangirl.com</a></li>
+</ul>
+<p>© 2018 Mattel. Todos los derechos reservados.</p>
+ </section>
+
+<div class="footer-newsletter__wrapper-form">
+  <div class="footer-newsletter__title">¡Envio  a domicilio gratis en la compra minima de $1,600.00!</div>
+  <form class="footer-newsletter__form" id="footerNewsletterForm" data-source-id="10929" data-preference-id="Mattel Shop LATAM">
+   
+    <div class="footer-newsletter__checkbox">
+       <label for="footerNewsletterCheckbox">
+        Valido en toda la republica mexicana y hasta el 9 de Enero del 2026 <br> <a href="terminos.html ">Términos y condiciones</a> - <a href="aviso.html">Declaración de privacidad de Mattel.</a>
+      </label>
+    </div>
+  </form>
+</div>
+
+         
+<footer >
+  <div >
+    <div class="container" style="max-width: 100%;   ">
+      <div class="col-sm-4">
+
+        <img  src="banner.png" style="max-width: 250px;" > </div>
+          <div class="col-sm-4" style="text-align: center;" ><b>
+          <br><a href="aviso.html" style="color:black;">Aviso de privacidad</a>
+          <br><a href="terminos.html" style="color:black;">Términos y Condiciones </a>
+          <br><a href="contacto.html" style="color:black;">Contactanos</a> </b>
+          </div>
+          <b>
+<div class="col-sm-4" style="text-align:center;margin-top: 5px;color: black;" ><br><a href="#"style="color:black;"><br>
+<p>Autop. Lecheria - Chamapa Manzana 005, 54769 Cuautitlán Izcalli, Méx.
+</p></b></div></div>         
+<br><nav style="background-color: white;color:black;text-align: center;"><b>Todos los derechos reservados<br>Mattel - 2025 <br></nav></b></div></div>
+</footer>   
+ <script src="cms/assets/paginator.js"></script>
+    <script src="cms/assets/paginate.js"></script>
+    <script src="cms/assets/paginate-content.js"></script>
+   <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/b46844f7c3.js" crossorigin="anonymous"></script>
+  <script src="cms/assets/responsiveslides.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <div class="redes-flotantes ">
+<a href="https://api.whatsapp.com/send?phone=527228688427" target="_blank">
+<img src="w.png">
+</a>
+</div>
+</body>
+</html>
+

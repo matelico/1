@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<title>Hot-Wheels Mexico</title>  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="hot.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+    .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 75%;
+z-index: 20;
+}
+.redes-flotantes img {
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+.redes-flotantes img:hover {
+-moz-transform: scale(1.1) rotate(6deg);
+-webkit-transform: scale(1.1) rotate(6deg);
+-o-transform: scale(1.1) rotate(6deg);
+-ms-transform: scale(1.1) rotate(6deg);
+transform: scale(1.1) rotate(6deg);
+}
+  body{
+    max-width: 96%;
+  }
+ /* Container styling */
+.footer-newsletter__wrapper-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+/* Title styling */
+.footer-newsletter__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+/* Inline form container */
+.footer-newsletter__form-inline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Input styling */
+.footer-newsletter__form-inline-input {
+  flex-grow: 1;
+  position: relative;
+}
+.footer-newsletter__form-inline-input input {
+  width: 100%;
+  padding: 10px 50px 10px 15px; /* Padding to account for button */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded edges */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.footer-newsletter__form-inline-input input:focus {
+  border-color: #007bff;
+}
+/* Submit button inside the input */
+.footer-newsletter__form-inline-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #007bff;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.footer-newsletter__form-inline-btn:hover {
+  background: #0056b3;
+}
+/* Error messages */
+.footer-newsletter__error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: none; /* Default hidden, shown dynamically */
+}
+/* Checkbox styling */
+.footer-newsletter__checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.footer-newsletter__checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.footer-newsletter__checkbox label {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+.footer-newsletter__checkbox a {
+  color: #007bff;
+  text-decoration: none;
+}
+.footer-newsletter__checkbox a:hover {
+  text-decoration: underline;
+}
+/* Responsive design */
+@media (max-width: 480px) {
+  .footer-newsletter__form-inline {
+    flex-direction: column;
+  }
+  .footer-newsletter__form-inline-btn {
+    position: relative;
+    transform: none;
+    right: 0;
+    margin-top: 10px;
+  }
+  .footer-newsletter__form-inline-input input {
+    padding: 10px 15px;
+  }
+}
+  a{color: black;
+
+  }
+ .container8{
+background: #4c4c4c;
+ }
+footer{
+    background:white;
+  color: black;
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.container{
+  max-width: 100%;
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.container4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+   color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.container5{
+    position: relative;
+    display: inline-block;
+    align-items: center;
+   color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* Barra Superior */
+.topbar {
+  background-color: white;
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topbar__logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.topbar__logo {
+  height: 40px; /* Ajusta el tamaño de los logos */
+  width: auto;
+}
+
+/* Navbar */
+.navbar {
+  margin-top: 50px; /* Ajuste para no sobreponerse con la barra superior */
+}
+
+.navbar nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  font-size: 16px;
+}
+
+.navbar nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Añadir un pequeño hover para los logos */
+.topbar__logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}.category-tab ul {
+  background: #0c231e;
+  border-bottom: 1px solid #bc955c;
+  list-style: none outside none;
+  margin: 0 0 30px;
+  padding: 0;
+  width: 100%;
+      }
+
+</style>
+               </head>
+<body>
+
+
+
+ <header class=" navbar navbar-inverse">
+ <div class="topbar">
+    <div class="topbar__logo-container">
+  <a href="power-wheels.html" >
+        <img src="pown.png" class="topbar__logo">
+      </a>
+        <a href="hot-wheels.html" >
+        <img src="hot.png" class="topbar__logo">
+      </a>
+        <a href="barbie.html" >
+        <img src="barn.png" class="topbar__logo">
+      </a>
+        <a href="fisher-price.html" >
+        <img src="fpn.png" class="topbar__logo">
+      </a>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse  navbar-fixed-top" style="background-color:#0057B8;">      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse"style="margin-top: 8px;">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="hot.png"  class="navbar-brand ">
+                </div> <div id="navbarMainCollapse" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                            <li><a href="nosotros.html"style="color: white; " >Inicio</a></li>
+                           <li><a href="contacto.html" style="color: white; ">Contactanos</a></li>
+            <li><a href='hot-wheels.html'style="color: white; ">Hot Wheels</a></li>
+            <li><a href="fisher-price.html" style="color: white; ">Fisher Price</a></li>
+            <li><a href="barbie.html"style="color: white; " >Barbie</a></li>
+                        <li><a href="power-wheels.html"style="color: white; ">Power wheels</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+</header>
+
+
+
+
+  <br>
+  <br>
+
+
+<main class="inner-page interior ficha">
+
+
+  <div class="container">
+   <div class="col-sm-12" style="text-align:center;">    
+    
+ 
+    <div class="">
+     <section>
+      <div class="col-md-7 col-xs-12 col-sm-12 pull-left" tabindex="0">  
+        <div class="col-sm-12  padding-left">
+          <div class="product-details"><!--product-details-->
+           
+
+            <div class="col-sm-6">
+             <div class="view-product"class="img img-responsive">
+                <img src="img/gd.png" class="img img-responsive">
+              </div>
+              <div id="similar-product" class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                      <a href="img/gd1.png"><img src="img/gd1.png"></a>
+                      </div>
+                     <div class="item ">
+                      <a href="img/gd2.png"><img src="img/gd2.png"></a>
+                    </div>              
+                     <div class="item ">
+                      <a href="img/gd3.png"><img src="img/gd3.png"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="img/gd4.png"><img src="img/gd4.png"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="img/gd5.png"><img src="img/gd5.png"></a>        
+                    </div>
+                   
+                   
+                   </div>
+                  <!-- Controls -->
+                  <a class="left item-control" href="#similar-product" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="right item-control" href="#similar-product" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+              </div>
+            </div>
+
+<div class="col-sm-6">
+  <div class="product-information"><!--/product-information-->
+    <h3>Hot Wheels City Ultimate Garage Dragon</h3>
+    <h6>ID: 187227</h6>
+    <span><h4>MXN $3,580.00</h4></span>
+
+    <!-- BOTÓN CORRECTO PARA AGREGAR AL CARRITO -->
+    <button onclick="agregarProducto(
+      'Hot Wheels City Ultimate Garage Dragon',
+      3580,
+      'img/gd.png'
+    )" 
+    style="background-color:#000; color:#fff; padding:10px 15px; border:none; cursor:pointer;">
+      Comprar
+    </button>
+
+    <p>
+      <b><br>Edad:</b> 5 años en adelante
+    </p>
+  </div><!--/product-information-->
+</div>
+
+             
+              </section>
+              </div>
+
+
+      
+
+      <div class="col-md-4 col-xs-12 pull-right"style="text-align:left;">
+
+
+
+ <div class="">
+         
+            <div class="panel-group category-products" id="accordian" style="margin-bottom: 10px;"><!--category-productsr-->
+             <br><br>
+
+                 <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#tal">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+               Detalles del producto
+                    </a>
+                  </h4>
+                </div>
+                <div id="tal" class="panel-collapse collapse">
+                 
+
+<p>
+
+
+Explore los cuatro niveles de carreras, retraso en el atrofismo y cuentacuentos en el Hot WheelsTM City Ultimate Garage, que aparece en Netflix Hot Wheels. Cada nivel inspira aventuras de juego de pista, incluyendo carreras lado a lado, acrobacias de bucle y una batalla épica con un dragón que come coche. El conjunto viene con dos vehículos Hot Wheels y tiene suficiente estacionamiento para más de 50 coches de juguete de escala 1:64. También se conecta a otros conjuntos para que los niños puedan construir su ciudad Hot WheelsTM. Los conjuntos adicionales se venden por separado. Los colores y decoraciones pueden variar.</p>
+                 <hr>
+                </div>
+              </div>
+
+
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#mane">
+                       <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                Caracteristicas
+                    </a>
+                  </h4>
+                </div>
+                <div id="mane" class="panel-collapse collapse">
+<ul><li>Carrera, truco y hacer batalla con un dragón en el Hot WheelsTM City Ultimate Garage de varios niveles.</li>
+                
+                  <li>El primer piso cuenta con detalles frescos de juego de pista como mangueras movibles, un lavado de coches con un rodillo de espuma, desviadores y conectores para conectarse a otros conjuntos como parte de una ciudad caliente más grande. (Ojos adicionales vendidos por separado.)</li>
+                
+                  <li>Tome el ascensor de dos coches al siguiente nivel donde los niños pueden lanzar los 2 coches Hot Wheels incluidos directamente desde el ascensor en una carrera lado a lado.</li>
+                
+                  <li>En el tercer nivel, lanzarse a un truco de bucle lado a lado, ajustando a los desviadores para cambiar los destinos finales de los coches.</li>
+                
+                  <li>Un dragón hambriento de coches espera en el cuarto nivel, y los niños lanzan sus Hot Wheels para derrotarlo o de lo contrario se comen. Los coches Eaten se 'cajan', mientras el dragón derrotado se desploma hasta el fondo del garaje.</li>
+                
+                  <li>Aproveche los más de 50 lugares de estacionamiento para un almacenamiento de Hot Wheels fácil y conveniente.</li>
+                
+                  <li>El Hot WheelsTM City Ultimate Garage incluye 2 vehículos Hot Wheels, por lo que este es un gran regalo para niños de 5 años o más.</li></ul>    <hr>
+                 <br><br>. 
+                </div>
+              </div>
+
+
+  
+              
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#susde">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+            Que hay en la caja?
+                    </a>
+                  </h4>
+                </div>
+                <div id="susde" class="panel-collapse collapse">
+          Incluye 1 Hot WheelsTM City Ultimate Garage con 2 vehículos de escala caliente 1:64. 
+              </div>
+            
+                     
+           
+            </div><!--/category-products-->
+         </div></div> </div>
+          </div><!--/product-details-->
+
+
+
+<div class="container4">
+<div class="pv-choking-hazard">
+  <i class="pv-choking-hazard__icon icon icon--warning"></i>
+  <div class="pv-choking-hazard__content-wrapper">
+    <span class="pv-choking-hazard__content">
+      ADVERTENCIA: Contiene o puede generar partes pequeñas que pueden causar asfixia 
+    </span>
+  </div>
+</div>
+</div>
+   
+<section id="5189" class="list-article documents">
+  <div class="container5">
+    <hr class="red">
+    <div class="row">
+
+      <!-- Producto 1 -->
+      <div class="col-md-4 col-xs-12 col-ms-12">
+        <article class="post">
+          <div class="guard-of">
+            <a href="pak.html"><img class="img img-responsive" src="img/pak.png" /></a>
+            <h4><b>Hot Wheels Set de 60 1:64<br>$1,000.00</b></h4>
+
+            <button onclick="agregarProducto(
+              'Hot Wheels Set de 60 1:64',
+              1000,
+              'img/pak.png'
+            )">
+              Comprar
+            </button>
+
+            <br><br><br>
+          </div>
+        </article>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-4 col-xs-12 col-ms-12">
+        <article class="post">
+          <div class="guard-of">
+            <a href="cw.html"><img class="img img-responsive" src="img/cw.png" /></a>
+            <h4><b>Hot Wheels City Ultimate Octo Car Wash<br>$2,970.00</b></h4>
+
+            <button onclick="agregarProducto(
+              'Hot Wheels City Ultimate Octo Car Wash',
+              2970,
+              'img/cw.png'
+            )">
+              Comprar
+            </button>
+
+            <br><br><br>
+          </div>
+        </article>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-4 col-xs-12 col-ms-12">
+        <article class="post">
+          <div class="guard-of">
+            <a href="rc.html"><img class="img img-responsive" src="img/rc.png" /></a>
+            <h4><b>Hot Wheels RC Barbie Corvette<br>$2,030.00</b></h4>
+
+            <button onclick="agregarProducto(
+              'Hot Wheels RC Barbie Corvette',
+              2030,
+              'img/rc.png'
+            )">
+              Comprar
+            </button>
+
+            <br><br><br>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+ <!-- =============== CARRITO =============== -->
+
+<!-- ICONO SUPERIOR -->
+<div id="carrito-icono" style="
+  cursor:pointer;
+  position:fixed;
+  top:100px;
+  right:20px;
+  font-size:32px;
+  z-index:9999;
+">
+  🛒 <span id="carrito-count">0</span>
+</div>
+
+<!-- PANEL DESPLEGABLE -->
+<div id="carrito-panel" style="
+  display:none;
+  position:fixed;
+  top:130px;
+  right:40px;
+  width:300px;
+  background:white;
+  padding:0;
+  border:1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index:10001;
+  border-radius:8px;
+">
+
+  <!-- LISTA CON SCROLL -->
+  <div style="
+    max-height:260px;
+    overflow-y:auto;
+    padding:15px;
+  ">
+
+    <!-- BOTÓN OCULTAR -->
+    <button onclick="document.getElementById('carrito-panel').style.display='none'" style="
+      width:100%;
+      padding:6px;
+      margin-bottom:10px;
+      cursor:pointer;
+      background:#ff4444;
+      color:white;
+      border:none;
+      border-radius:6px;
+      font-size:14px;
+    ">Ocultar carrito</button>
+
+    <h3 style="margin-top:0;"></h3>
+
+    <div id="carrito-lista"></div>
+
+  </div>
+
+  <!-- TOTAL + BOTONES FIJOS -->
+  <div style="
+    padding:12px;
+    border-top:1px solid #ddd;
+    background:#f7f7f7;
+    position:sticky;
+    bottom:0;
+  ">
+
+    <p style="margin:0; font-size:16px;">
+      <b>Total: $<span id="carrito-total">0</span></b>
+    </p>
+
+    <button onclick="borrarCarrito()" style="
+      width:100%;
+      padding:8px;
+      cursor:pointer;
+      margin-top:8px;
+    ">
+      Borrar carrito
+    </button>
+
+    <button onclick="window.location.href='checkout.html'" style="
+      width:100%;
+      margin-top:10px;
+      padding:10px;
+      font-weight:bold;
+      cursor:pointer;
+      background:#28a745;
+      color:white;
+      border:none;
+      border-radius:6px;
+    ">
+      Continuar a la compra
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =============== SCRIPT DEL CARRITO =============== -->
+<script>
+let carrito = [];
+
+if (localStorage.getItem("carrito")) {
+  carrito = JSON.parse(localStorage.getItem("carrito"));
+}
+
+function actualizarCarrito() {
+  const lista = document.getElementById('carrito-lista');
+  const totalSpan = document.getElementById('carrito-total');
+  const countSpan = document.getElementById('carrito-count');
+
+  lista.innerHTML = '';
+
+  let total = 0;
+
+  carrito.forEach((item, index) => {
+    total += item.precio;
+
+    const div = document.createElement('div');
+    div.style.display = 'flex';
+    div.style.alignItems = 'center';
+    div.style.justifyContent = 'space-between';
+    div.style.marginBottom = '10px';
+    div.style.gap = '10px';
+
+    div.innerHTML = `
+      <img src="${item.img}" style="width:45px;height:auto;border-radius:4px;">
+      <div style="flex:1;">
+        <span style="font-size:14px;">${item.nombre}</span><br>
+        <strong style="font-size:13px;">$${item.precio}</strong>
+      </div>
+      <button onclick="eliminarProducto(${index})"
+        style="cursor:pointer;border:none;background:none;font-size:18px;">✖</button>
+    `;
+
+    lista.appendChild(div);
+  });
+
+  totalSpan.textContent = total.toLocaleString();
+  countSpan.textContent = carrito.length;
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+function agregarProducto(nombre, precio, img) {
+  carrito.push({ nombre, precio, img });
+  actualizarCarrito();
+}
+
+function eliminarProducto(i) {
+  carrito.splice(i, 1);
+  actualizarCarrito();
+}
+
+function borrarCarrito() {
+  carrito = [];
+  actualizarCarrito();
+}
+
+document.getElementById('carrito-icono').addEventListener('click', () => {
+  const panel = document.getElementById('carrito-panel');
+  panel.style.display = (panel.style.display === 'none' || panel.style.display === '') 
+    ? 'block' : 'none';
+});
+
+actualizarCarrito();
+</script>
+<div class="footer-newsletter__wrapper-form">
+  <div class="footer-newsletter__title">¡Envio  a domicilio gratis en la compra minima de $1,600.00!</div>
+  <form class="footer-newsletter__form" id="footerNewsletterForm" data-source-id="10929" data-preference-id="Mattel Shop LATAM">
+    <div class="footer-newsletter__checkbox">
+ <label for="footerNewsletterCheckbox">
+        Valido en toda la republica mexicana y hasta el 9 de Enero del 2026 <br> <a href="terminos.html ">Términos y condiciones</a> - <a href="aviso.html">Declaración de privacidad de Mattel.</a>
+      </label>
+    </div>
+  </form>
+</div>
+   
+<footer >
+  <div >
+    <div class="container" style="max-width: 100%;   ">
+      <div class="col-sm-4">
+
+        <img  src="banner.png" style="max-width: 250px;" > </div>
+          <div class="col-sm-4" style="text-align: center;" ><b>
+          <br><a href="aviso.html" style="color:black;">Aviso de privacidad</a>
+          <br><a href="terminos.html" style="color:black;">Términos y Condiciones </a>
+          <br><a href="contacto.html" style="color:black;">Contactanos</a> </b>
+          </div>
+          <b>
+<div class="col-sm-4" style="text-align:center;margin-top: 5px;color: black;" ><br><a href="#"style="color:black;"><br>
+<p>Autop. Lecheria - Chamapa Manzana 005, 54769 Cuautitlán Izcalli, Méx.
+</p></b></div></div>         
+<br><nav style="background-color: white;color:black;text-align: center;"><b>Todos los derechos reservados<br>Mattel - 2025 <br></nav></b></div></div>
+</footer>   
+ <script src="cms/assets/paginator.js"></script>
+    <script src="cms/assets/paginate.js"></script>
+    <script src="cms/assets/paginate-content.js"></script>
+   <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/b46844f7c3.js" crossorigin="anonymous"></script>
+  <script src="cms/assets/responsiveslides.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <div class="redes-flotantes ">
+<a href="https://api.whatsapp.com/send?phone=527228688427" target="_blank">
+<img src="w.png">
+</a>
+</div>
+</body>
+</html>
+
