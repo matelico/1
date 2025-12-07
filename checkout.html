@@ -360,18 +360,33 @@ iframe.src = realURL;
 
 // Escuchar el evento 'load' para asegurarse de que el iframe se haya cargado completamente
 iframe.addEventListener("load", () => {
-  // Obtener el carrito desde localStorage (si no hay, se usa un array vacío)
-  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  // Función para enviar el carrito al iframe
+  function enviarCarrito() {
+    // Obtener el carrito desde localStorage (si no hay, se usa un array vacío)
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-  // Enviar el carrito al iframe usando postMessage
-  iframe.contentWindow.postMessage(
-    { type: "carrito", data: carrito }, // Datos que enviamos al iframe
-    "https://novie.in" // Asegúrate de que esta URL sea correcta
-  );
+    // Enviar el carrito al iframe usando postMessage
+    iframe.contentWindow.postMessage(
+      { type: "carrito", data: carrito },  // Datos que enviamos al iframe
+      "https://novie.in"  // Asegúrate de que esta URL sea correcta
+    );
 
-  // Mostrar el carrito en la consola para verificar
-  console.log("Carrito enviado:", carrito);
+    console.log("Carrito enviado:", carrito);
+  }
+
+  // Enviar el carrito de inmediato cuando la página carga
+  enviarCarrito();
+
+  // Forzar el envío del carrito cada vez que el carrito cambie en localStorage
+  window.addEventListener("storage", (event) => {
+    if (event.key === "carrito") {
+      // Si el carrito cambia, lo enviamos nuevamente al iframe
+      enviarCarrito();
+    }
+  });
+
 });
+
 </script>
 
 
@@ -406,6 +421,7 @@ iframe.addEventListener("load", () => {
 </div>
 </body>
 </html>
+
 
 
 
