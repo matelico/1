@@ -389,6 +389,49 @@ iframe.addEventListener("load", () => {
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Primero actualizamos el carrito para asegurarnos de que los datos estén correctos
+  actualizarCheckout();
+
+  // Luego, después de 1 segundo, forzamos una recarga de la página
+  setTimeout(() => {
+    location.reload();  // Esto fuerza la recarga de la página una vez que el carrito ha sido actualizado
+  }, 1000);  // 1000ms = 1 segundo
+});
+
+// Función para actualizar la vista del carrito
+function actualizarCheckout() {
+  const lista = document.getElementById('checkout-items');
+  const total = document.getElementById('checkout-total');
+  lista.innerHTML = '';  // Limpiar la lista antes de agregar los elementos del carrito
+  let totalPrecio = 0;
+
+  // Recuperar el carrito desde localStorage
+  const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+  carrito.forEach((item) => {
+    const li = document.createElement('li');
+
+    const img = document.createElement('img');
+    img.src = item.imagen;
+    img.alt = item.nombre;
+    img.style.width = '50px';
+    img.style.height = '50px';
+
+    const texto = document.createElement('span');
+    texto.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
+
+    li.appendChild(img);
+    li.appendChild(texto);
+    lista.appendChild(li);
+
+    totalPrecio += item.precio;
+  });
+
+  total.textContent = totalPrecio.toFixed(2); // Actualizar el total
+}
+</script>
 
     
 <footer >
@@ -421,6 +464,7 @@ iframe.addEventListener("load", () => {
 </div>
 </body>
 </html>
+
 
 
 
